@@ -5,6 +5,7 @@ import HomePage from './HomePage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <title>Aoao Ying Web</title>
     <HomePage />
   </StrictMode>,
 )
