@@ -3,7 +3,7 @@ import "./LeftSideBar.css";
 function LeftSideBar()
 {
   return(
-    <div>
+    <div className="left-section">
       <div className="TopBar">
         <p>
           Aoao Ying Graphic design. Selected works. (2025)
