@@ -1,4 +1,5 @@
 import "./MiddleSection.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 function MiddleSection(){
   const [hovered, setHovered] = useState<string | null>(null);
@@ -12,6 +13,7 @@ function MiddleSection(){
       text: "I wake up, take my medicine, buy groceries, eat, urinate, \nwatch TV, and go to sleep. After all, tomorrow is another day.",
       sub: "publication, 2025 spring",
       img: "/picture/yyc_main.png",
+      link:"/yingyechang",
     },
       {
         id: "nainai1",
@@ -20,22 +22,25 @@ function MiddleSection(){
         text: "Only advocating for the arena of instinctive feelings in discourse.",
         sub: "publication, 2023 summer",
         img: "/picture/nainai.png",
+        link: "/yingyechang",
       },
       {
         id: "no024",
         color: "var(--font-color-green)",
         title: "No. 024",
-        text: "I am a number, a denominator of data, an insignificant component of structure. I have never been my own self.",
+        text: "I am a number, a denominator of data, an insignificant component\n of structure. I have never been my own self.",
         sub: "publication, 2023 summer",
         img: "/picture/no024.png",
+        link: "/yingyechang",
       },
       {
         id: "discipline",
         color: "var(--font-color-brown)",
         title: "Discipline Archive",
-        text: "Are human willing to be self-controlled? If so, do I have the courage to be different?",
+        text: "Are human willing to be self-controlled? If so, do I have the\n courage to be different?",
         sub: "installation, 2023 summer",
         img: "/picture/discipline.png",
+        link: "/yingyechang",
       },
       {
         id: "cunt",
@@ -44,6 +49,7 @@ function MiddleSection(){
         text: "I have a cunt, I must receive!",
         sub: "publication, 2022 spring",
         img: "/picture/cunt.png",
+        link: "/yingyechang",
       },
       {
         id: "quench",
@@ -52,6 +58,7 @@ function MiddleSection(){
         text: "It is futile to try to express the essence of a thing. The effects we perceive, and the complete history of these effects, are enough to define the essence of things.",
         sub: "publication, 2022 winter",
         img: "/picture/quench.png",
+        link: "/yingyechang",
       },
       {
         id: "nainai2",
@@ -60,6 +67,7 @@ function MiddleSection(){
         text: "No shame for your desire, nainai.",
         sub: "package, 2022 spring",
         img: "/picture/nainai2.png",
+        link: "/yingyechang",
       },
   ];
 
@@ -69,13 +77,14 @@ function MiddleSection(){
         {items.map((item) => (
           <div
             key={item.id}
-            style={{ color: item.color }}
             onMouseEnter={() => setHovered(item.img)}
             onMouseLeave={() => setHovered(null)}
           >
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-            <h4>{item.sub}</h4>
+            <Link to={item.link} style={{ textDecoration: "none", color: item.color }}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              <h4>{item.sub}</h4>
+            </Link>
           </div>
         ))}
 
