@@ -1,6 +1,9 @@
 import "./MiddleSection.css";
-
+import { useState } from "react";
 function MiddleSection(){
+  const [hovered, setHovered] = useState(null);
+
+  
   return(
     <div className="middle-section">
       <div className="Text-Container">
