@@ -7,9 +7,11 @@ function HomePage() {
 
   return (
     <div className='container'>
+      <div className='topbar'></div>
       <LeftSideBar />
       <MiddleSection />
       <RightSideBar />
+      <div className='bottombar'></div>
     </div>
   )
 }

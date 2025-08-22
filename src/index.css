@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "HY Jin";
+  src: url("/font/HYJinLingKeJingW.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* global style */
 body,
 #root {
@@ -72,11 +79,17 @@ h4
   margin-top: 0;
 }
 
+.left-section p,
+.right-section p,
+.middle-section p {
+  line-height: 30.4px;
+}
+
 /* 1920x1080 */
 @media screen and (max-width: 1920px){
   .left-section
   {
-    max-width: 523px;
+    max-width:600px;
     margin-right: 102px;
   }
 

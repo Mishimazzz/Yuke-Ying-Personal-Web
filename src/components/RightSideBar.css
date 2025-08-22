@@ -1,6 +1,26 @@
 .right-section
 {
+  position: fixed;
+  top: 0;
+  right: 0;
   margin-top: 34px;
   text-align: right;
   margin-right: 27px;
+}
+
+.chinese
+{
+  font-family: "HY Jin", serif;
+  font-style: normal;
+  font-size: 19px;
+  font-kerning: normal;
+  letter-spacing: 0.05em;
+}
+
+.english {
+  font-family: "GT Alpina", serif;
+  font-style: normal;
+  font-size: 19px;
+  font-kerning: normal;
+  letter-spacing: 0.05em;
 }
