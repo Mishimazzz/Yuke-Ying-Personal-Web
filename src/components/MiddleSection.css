@@ -4,11 +4,11 @@
   flex-direction: column;
   margin-left: 652px;
   white-space: pre-line;
+  margin-top: 38px;
 }
 
 .Text-Container
 {
-  margin-top: 38px;
   min-height: calc(100vh + 280px);
 }
 
