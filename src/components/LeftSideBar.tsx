@@ -1,6 +1,6 @@
 import "./LeftSideBar.css";
 import { useLocation } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 function LeftSideBar()
 {
   // 根据location去更改文字信息
@@ -22,7 +22,7 @@ function LeftSideBar()
           </div>
         ) : (
           <div>
-            <p className="works-font">Aoao Ying Graphic design.</p>
+              <Link to={"/"} style={{ textDecoration: "none", color: "black" }}><p>Aoao Ying Graphic design.</p></Link>
           </div>
         )}
       </div>
