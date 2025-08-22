@@ -1,0 +1,12 @@
+.middle-section
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.Integer
+{
+  font-size: 14px;
+  font-weight: 700;
+}

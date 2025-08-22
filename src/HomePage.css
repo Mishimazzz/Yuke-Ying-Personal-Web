@@ -7,6 +7,5 @@
 .left-section, .right-section, .middle-section
 {
   flex: 1;
-  padding: 20px;
   z-index: 2
 }

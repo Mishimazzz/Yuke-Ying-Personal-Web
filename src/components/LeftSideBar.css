@@ -1,0 +1,20 @@
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.TopBar
+{
+  margin-top: 34px;
+  margin-left: 27px;
+}
+
+.BottomBar
+{
+  display: flex;
+  margin-left: 27px;
+  margin-bottom: 88px;
+  align-items: flex-end;
+}

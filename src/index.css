@@ -1,0 +1,92 @@
+/* 自定义字体 */
+@font-face {
+  font-family: "GT Alpina";
+  src: url("/font/GT-Alpina-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Alpina Italic";
+  src: url("/font/GT-Alpina-Regular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fakt Normal";
+  src: url("/font/Fakt-Normal.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global style */
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+:root
+{
+  --font-color-orange:#ff5417;
+  --font-color-pink:#ffbfb8;
+  --font-color-green:#00a644;
+  --font-color-brown:#af8600;
+  --font-color-red:#d6003b;
+  --font-color-blue:#00a5fc;
+}
+
+h3
+{
+  font-family: "GT Alpina Italic", serif;
+  font-style: italic;
+  font-size:23px;
+  font-kerning: normal;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+p
+{
+  font-family: "GT Alpina", serif;
+  font-style: normal;
+  font-size: 23px;
+  font-kerning: normal;
+  letter-spacing: 0.01em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h4
+{
+  font-family: "Fakt Normal", serif;
+  font-style: normal;
+  font-size: 19px;
+  font-kerning: normal;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* 1920x1080 */
+@media screen and (max-width: 1920px){
+  .left-section
+  {
+    max-width: 523px;
+    margin-right: 102px;
+  }
+
+  .middle-section
+  {
+    max-width: 670px;
+  }
+
+  .right-section
+  {
+    max-width: 571px;
+  }
+}
