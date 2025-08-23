@@ -1,6 +1,27 @@
 import "./yycTextPart.css"
+import {useState} from 'react'
 function YycTextPart()
 {
+  const images = [
+    "/picture/yingyechang/yyc_3.png",
+    "/picture/yingyechang/yyc_4.png",
+    "/picture/yingyechang/yyc_5.png",
+    "/picture/yingyechang/yyc_6.png",
+    "/picture/yingyechang/yyc_7.png",
+    "/picture/yingyechang/yyc_8.png",
+    "/picture/yingyechang/yyc_9.png",
+    "/picture/yingyechang/yyc_10.png",
+    "/picture/yingyechang/yyc_11.png",
+    "/picture/yingyechang/yyc_12.png",
+    "/picture/yingyechang/yyc_13.png",
+    "/picture/yingyechang/yyc_14.png",
+    "/picture/yingyechang/yyc_15.png",
+  ]
+
+  const [index, setIndex] = useState(0);
+  const prev = () => setIndex((index - 1 + images.length) % images.length);
+  const next = () => setIndex((index + 1) % images.length);
+
   return(
     <div className="middle-section" style={{maxWidth:"800px"}}>
       <h3>
@@ -20,6 +41,7 @@ function YycTextPart()
         order, they trace his appearance, circumstances, and companions—from the present day back to 
         his youth.
       </p> */}
+      {/* 默认1920宽 */}
       <img src="/picture/yingyechang/yyc_1.png" alt="" style={{transform: "translateX(-400px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
       <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(500px) translateY(-550px)"}}>
         Size: 142 × 210 mm<br/>
@@ -27,7 +49,44 @@ function YycTextPart()
         First edition: 200 copies<br />
         For reading only, not for sale.<br />
       </p>
-      <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(350px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
+      <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(350px) rotate(10deg) scale(1.7)", marginTop: "100px" }} />
+      
+      {/* slider */}
+      <div className="slider">
+        <img
+          src="/picture/yingyechang/arrowLeft.png"
+          alt="prev_button"
+          onClick={prev}
+          style={{
+            transform: "translateX(-700px)", // 只负责移动
+            width: "50px",                   // 控制箭头尺寸
+            height: "auto",
+            cursor: "pointer"
+          }}
+        />
+
+        <img
+          src={images[index]}
+          alt="slide"
+          style={{
+            transform: "translateX(-500px)", // 只移动
+            width: "200%",                     // 控制图片大小
+            height: "auto"
+          }}
+        />
+
+        <img
+          src="/picture/yingyechang/arrowRight.png"
+          alt="next_button"
+          onClick={next}
+          style={{
+            transform: "translateX(-1000px)",
+            width: "50px",
+            height: "50px",
+            cursor: "pointer"
+          }}
+        />
+      </div>
     </div>
   );
 }
