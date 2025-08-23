@@ -76,6 +76,10 @@ function YycTextPart()
         />
       </div>
 
+      <div>
+        <img src="/picture/yingyechang/yyc_17.jpg" alt="" style={{
+          transform: "translateX(90px) translateY(-50px)", width: "1700px",height: "auto", }} />
+      </div>
     </div>
     
   );
