@@ -20,13 +20,14 @@ function YycTextPart()
         order, they trace his appearance, circumstances, and companions—from the present day back to 
         his youth.
       </p> */}
-      <img src="/picture/yingyechang/yyc_1.png" alt="" style={{transform: "translateX(-450px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
-      <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(450px) translateY(-550px)"}}>
+      <img src="/picture/yingyechang/yyc_1.png" alt="" style={{transform: "translateX(-400px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
+      <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(500px) translateY(-550px)"}}>
         Size: 142 × 210 mm<br/>
         Page count: 304 pages<br />
         First edition: 200 copies<br />
         For reading only, not for sale.<br />
       </p>
+      <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(350px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
     </div>
   );
 }
