@@ -18,30 +18,41 @@ function YycTextPart()
     "/picture/yingyechang/yyc_15.png",
   ]
 
+  // arrow slider
   const [index, setIndex] = useState(0);
   const prev = () => { console.log("prev clicked", index); setIndex((index - 1 + images.length) % images.length)};
   const next = () => setIndex((index + 1) % images.length);
 
+  //title clicker
+  const [isOpen, setIsOpen] = useState(false);
+
   return(
     <div>
       <div className="middle-section" style={{ maxWidth: "800px" }}>
-        <h3>
-          Everlasting Good Karma
-        </h3>
-        {/* <p>
-        Everlasting Good Karma is a memoir designed and produced for my grandfather, 应业长, at the age of
-        85. Over the past two years, he handwrote tens of thousands of words reflecting on his life, 
-        and carefully compiled a collection of old photographs—hoping to leave behind something more 
-        enduring than the body itself, something that could mark his presence beyond time.
-
-        The book is divided into two parts: text and images. The written section presents a chronological 
-        narrative of his working life, with subtle references to the illnesses and prescriptions that have 
-        accompanied his old age. To accompany the text, I revisited and photographed the homes and 
-        workplaces he once inhabited—many of which are now abandoned or transformed. The image 
-        section consists of old photographs taken throughout his life. Arranged in reverse chronological 
-        order, they trace his appearance, circumstances, and companions—from the present day back to 
-        his youth.
-      </p> */}
+        <div className="text-box">
+          <h3
+            className="title"
+            onClick={() => setIsOpen(!isOpen)}>
+            Everlasting Good Karma
+          </h3>
+          <div className={`content ${isOpen ? "open" : ""}`}>
+            <p>
+              <br />
+              <span style={{ fontFamily: "GT Alpina Italic", fontSize:"20px"}}>Everlasting Good Karma</span> is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "GT Alpina", fontSize:"17.5px"}}>应业长</span>, at the age of
+              85. Over the past two years, he handwrote tens of thousands of words reflecting on his life,
+              and carefully compiled a collection of old photographs—hoping to leave behind something more
+              enduring than the body itself, something that could mark his presence beyond time.
+              <br /><br />
+              The book is divided into two parts: text and images. The written section presents a chronological
+              narrative of his working life, with subtle references to the illnesses and prescriptions that have
+              accompanied his old age. To accompany the text, I revisited and photographed the homes and
+              workplaces he once inhabited—many of which are now abandoned or transformed. The image
+              section consists of old photographs taken throughout his life. Arranged in reverse chronological
+              order, they trace his appearance, circumstances, and companions—from the present day back to
+              his youth.
+            </p>
+          </div>
+        </div>
         {/* 默认1920宽 */}
         <img src="/picture/yingyechang/yyc_1.png" alt="" style={{ transform: "translateX(-400px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
         <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(500px) translateY(-550px)" }}>

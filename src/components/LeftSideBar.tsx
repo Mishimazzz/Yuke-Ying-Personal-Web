@@ -15,7 +15,7 @@ function LeftSideBar()
             <p>
               Aoao Ying Graphic design. Selected works. (2025)
               <br /><br />
-              aoaoying.work@gmail.com | Ⓟ158-8899-0202
+              aoaoying.work@gmail.com | ⑧⑥158-8899-0202
               <br />
               Live and work currently in southeastern CN.
             </p>

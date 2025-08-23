@@ -11,7 +11,7 @@ function MiddleSection(){
       color: "var(--font-color-orange)",
       title: "Everlasting Good Karma",
       text: "I wake up, take my medicine, buy groceries, eat, urinate, \nwatch TV, and go to sleep. After all, tomorrow is another day.",
-      sub: { textBefore: "publication,", textAfter: " spring",year: "2025" },
+      sub: "publication, 2025 spring",
       img: "/picture/yingyechang/yyc_main.png",
       link:"/yingyechang",
     },
@@ -84,13 +84,7 @@ function MiddleSection(){
               <h3>{item.title}</h3>
               <p>{item.text}</p>
               <h4>
-                {typeof item.sub === "string" ? (
-                  item.sub
-                ) : (
-                  <>
-                    {item.sub.textBefore} <span className="Integer">{item.sub.year}</span> {item.sub.textAfter}
-                  </>
-                )}
+                {item.sub}
               </h4>
             </Link>
           </div>

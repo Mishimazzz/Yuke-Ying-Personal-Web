@@ -27,6 +27,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "National";
+  src: url("/font/National-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* global style */
 body, html
 #root {
@@ -71,9 +78,9 @@ p
 
 h4
 {
-  font-family: "Fakt Normal", serif;
+  font-family: "National", serif;
   font-style: normal;
-  font-size: 19px;
+  font-size: 20.6px;
   font-kerning: normal;
   letter-spacing: 0.05em;
   font-weight: 400;

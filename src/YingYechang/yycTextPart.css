@@ -15,6 +15,18 @@
   object-fit: contain;
 }
 
+.text-box .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.text-box .content.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
 .arrow-left,
 .arrow-right {
   position: absolute;
