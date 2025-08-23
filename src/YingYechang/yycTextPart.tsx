@@ -6,7 +6,7 @@ function YycTextPart()
       <h3>
         Everlasting Good Karma
       </h3>
-      <p>
+      {/* <p>
         Everlasting Good Karma is a memoir designed and produced for my grandfather, 应业长, at the age of
         85. Over the past two years, he handwrote tens of thousands of words reflecting on his life, 
         and carefully compiled a collection of old photographs—hoping to leave behind something more 
@@ -19,6 +19,13 @@ function YycTextPart()
         section consists of old photographs taken throughout his life. Arranged in reverse chronological 
         order, they trace his appearance, circumstances, and companions—from the present day back to 
         his youth.
+      </p> */}
+      <img src="/picture/yingyechang/yyc_1.png" alt="" style={{transform: "translateX(-450px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
+      <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(450px) translateY(-550px)"}}>
+        Size: 142 × 210 mm<br/>
+        Page count: 304 pages<br />
+        First edition: 200 copies<br />
+        For reading only, not for sale.<br />
       </p>
     </div>
   );
