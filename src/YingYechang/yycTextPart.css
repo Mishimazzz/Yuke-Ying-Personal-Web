@@ -32,8 +32,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   cursor: pointer;
   z-index: 10;
 }
@@ -44,4 +44,9 @@
 
 .arrow-right {
   right: 20px;
+}
+
+.bottom-img
+{
+  margin-bottom: 300px;
 }

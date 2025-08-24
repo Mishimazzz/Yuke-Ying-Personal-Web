@@ -1,5 +1,6 @@
 import "./yycTextPart.css"
 import {useState} from 'react'
+import { useLanguage } from '../components/LanguageContext';
 function YycTextPart()
 {
   const images = [
@@ -25,6 +26,7 @@ function YycTextPart()
 
   //title clicker
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useLanguage();
 
   return(
     <div>
@@ -33,12 +35,31 @@ function YycTextPart()
           <h3
             className="title"
             onClick={() => setIsOpen(!isOpen)}>
-            Everlasting Good Karma
+            {language === "zh" ? (<span className="zh-font" style={{fontStyle:"normal", marginTop:""}}>应业長</span>) : ("Everlasting Good Karma")}
           </h3>
-          <div className={`content ${isOpen ? "open" : ""}`}>
+          <div className={`content ${isOpen ? "open" : ""} ${language === "zh" ? "zh-font" : ""}`}>
+            {language === "zh" ? (
+              <p>
+                <br />
+                《应业長》（ Everlasting Good Karma）是一本为我年届<br />
+                八十五岁的爷爷应业长先生设计并制作的自传书。过去两年<br />
+                里，他亲笔写下万字回忆，并整理了一生的旧照片，试图留<br />
+                下一些可以流传的、能够证明自己存在的、比肉身相对更<br />
+                永恒的东西。
+                <br /><br />
+                全书分为文字与图像两部分。文字部分按时间顺序讲述他丰<br />
+                富的工作经历，背景暗藏他年老后的各式病症处方。我走访<br />
+                并拍摄了他曾经生活、工作过的地点——大多已废弃或被改<br />
+                建，这些照片也作为文字部分的背景补充。
+                <br /><br />
+                图像部分则收录了他自己拍摄或被拍摄的旧照片，并以倒叙<br />
+                方式编排，从晚年回望青年，呈现出他在不同阶段的容貌、<br />
+                处境以及陪伴在他身边的人。
+              </p>
+            ) : (
             <p>
               <br />
-              <span style={{ fontFamily: "GT Alpina Italic", fontSize:"20px"}}>Everlasting Good Karma</span> is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "GT Alpina", fontSize:"17.5px"}}>应业长</span>, at the age of
+                  <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span> is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
               85. Over the past two years, he handwrote tens of thousands of words reflecting on his life,
               and carefully compiled a collection of old photographs—hoping to leave behind something more
               enduring than the body itself, something that could mark his presence beyond time.
@@ -51,6 +72,7 @@ function YycTextPart()
               order, they trace his appearance, circumstances, and companions—from the present day back to
               his youth.
             </p>
+            )}
           </div>
         </div>
         {/* 默认1920宽 */}
@@ -87,7 +109,7 @@ function YycTextPart()
         />
       </div>
 
-      <div>
+      <div className="bottom-img">
         <img src="/picture/yingyechang/yyc_17.jpg" alt="" style={{
           transform: "translateX(90px) translateY(-50px)", width: "1700px",height: "auto", }} />
       </div>
