@@ -93,6 +93,19 @@ h4
   line-height: 30.4px;
 }
 
+.zh-font p,
+.zh-font h4,
+.zh-font h3 {
+  font-family: "HY Jin", serif !important;
+  letter-spacing: 0.02em;
+  font-size: 21.6px;
+  font-style: normal;
+}
+
+.zh-font {
+  font-family: "HY Jin", serif;
+}
+
 /* 1920x1080 */
 @media screen and (max-width: 1920px){
   .left-section

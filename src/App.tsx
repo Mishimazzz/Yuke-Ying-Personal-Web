@@ -1,17 +1,18 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
 import YingYechang from "./YingYechangPage";
+import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/yingyechang" element={<YingYechang />} />
-      </Routes>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/yingyechang" element={<YingYechang />} />
+        </Routes>
+      </Router>
+    </LanguageProvider>
   );
 }
 
