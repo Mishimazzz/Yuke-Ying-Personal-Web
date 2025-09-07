@@ -16,7 +16,9 @@
 }
 
 .content p {
-  font-size: 17.8px;
+  font-size: 16.2px;
+  line-height:27.3px;
+  /* max-width: 430px;中文的尺寸大小 */
 }
 
 .text-box .content {

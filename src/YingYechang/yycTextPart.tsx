@@ -35,17 +35,17 @@ function YycTextPart()
           <h3
             className="title"
             onClick={() => setIsOpen(!isOpen)}>
-            {language === "zh" ? (<span className="zh-font" style={{fontStyle:"normal", marginTop:""}}>应业長</span>) : ("Everlasting Good Karma")}
+            {language === "zh" ? (<span className="zh-font" style={{ fontFamily: "HY Jin", fontSize: "21.6px", display: "inline-block" }}>应业長</span>) : ("Everlasting Good Karma")}
           </h3>
           <div className={`content ${isOpen ? "open" : ""} ${language === "zh" ? "zh-font" : ""}`}>
             {language === "zh" ? (
-              <p>
+              <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px"}}>
                 <br />
-                《应业長》（ Everlasting Good Karma）是一本为我年届<br />
+                《应业長》（ <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span>）是一本为我年届<br />
                 八十五岁的爷爷应业长先生设计并制作的自传书。过去两年<br />
                 里，他亲笔写下万字回忆，并整理了一生的旧照片，试图留<br />
-                下一些可以流传的、能够证明自己存在的、比肉身相对更<br />
-                永恒的东西。
+                下一些可以流传的、能够证明自己存在的、比肉身相对更永<br />
+                恒的东西。
                 <br /><br />
                 全书分为文字与图像两部分。文字部分按时间顺序讲述他丰<br />
                 富的工作经历，背景暗藏他年老后的各式病症处方。我走访<br />
@@ -57,9 +57,9 @@ function YycTextPart()
                 处境以及陪伴在他身边的人。
               </p>
             ) : (
-            <p>
+              <p style={{ maxWidth: "782px", lineHeight: "27.3px", fontSize: "17.8px" }}>
               <br />
-              <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span> 
+              <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma </span> 
               is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
               85. Over the past two years, he handwrote tens of thousands of words reflecting on his life,
               and carefully compiled a collection of old photographs—hoping to leave behind something more

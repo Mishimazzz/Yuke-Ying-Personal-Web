@@ -36,11 +36,17 @@ function LeftSideBar()
             </div>
           )
         ) : (
-          <div>
+          language === "zh" ? (
             <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
-              <p>Aoao Ying Graphic design.</p>
+              <p style={{ fontFamily: "HY Jin", fontSize: "21.6px" }}>应凹凹做了些平面设计。</p>
             </Link>
-          </div>
+          ) : (
+            <div>
+              <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
+                <p>Aoao Ying Graphic design.</p>
+              </Link>
+            </div>
+          )
         )}
       </div>
 
