@@ -78,7 +78,7 @@ function YycTextPart()
         </div>
         {/* 默认1920宽 */}
         <img src="/picture/yingyechang/yyc_1.png" alt="" style={{ transform: "translateX(-490px) rotate(10deg) scale(1.5)", marginTop: "180px" }} />
-        <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)" }}>
+        <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", fontSize:"17.8px" }}>
           Size: 142 × 210 mm<br />
           Page count: 304 pages<br />
           First edition: 200 copies<br />
@@ -95,7 +95,7 @@ function YycTextPart()
           onClick={prev}
           className="arrow-left"
         />
-
+        
         <img
           src={images[index]}
           alt="slide"
@@ -112,7 +112,7 @@ function YycTextPart()
 
       <div className="bottom-img">
         <img src="/picture/yingyechang/yyc_17.jpg" alt="" style={{
-          transform: "translateX(90px) translateY(-50px)", width: "1700px",height: "auto", }} />
+          transform: "translateX(90px) translateY(0px)", width: "1700px",height: "auto", }} />
       </div>
     </div>
     
