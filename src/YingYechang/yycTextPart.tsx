@@ -59,7 +59,8 @@ function YycTextPart()
             ) : (
             <p>
               <br />
-                  <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span> is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
+              <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span> 
+              is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
               85. Over the past two years, he handwrote tens of thousands of words reflecting on his life,
               and carefully compiled a collection of old photographs—hoping to leave behind something more
               enduring than the body itself, something that could mark his presence beyond time.
@@ -76,14 +77,14 @@ function YycTextPart()
           </div>
         </div>
         {/* 默认1920宽 */}
-        <img src="/picture/yingyechang/yyc_1.png" alt="" style={{ transform: "translateX(-400px) rotate(10deg) scale(1.7)", marginTop: "230px" }} />
-        <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(500px) translateY(-550px)" }}>
+        <img src="/picture/yingyechang/yyc_1.png" alt="" style={{ transform: "translateX(-490px) rotate(10deg) scale(1.5)", marginTop: "180px" }} />
+        <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(400px) translateY(-520px)" }}>
           Size: 142 × 210 mm<br />
           Page count: 304 pages<br />
           First edition: 200 copies<br />
           For reading only, not for sale.<br />
         </p>
-        <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(350px) rotate(10deg) scale(1.7)", marginTop: "100px" }} />
+        <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(250px) rotate(0deg) scale(2.1)", marginTop: "100px" }} />
       </div>
       
       {/* slider */}
