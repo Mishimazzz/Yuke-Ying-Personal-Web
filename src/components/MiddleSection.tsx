@@ -51,7 +51,7 @@ function MiddleSection(){
       text: "I have a cunt, I must receive!",
       sub: "publication, 2022 spring",
       img: "/picture/cunt.png",
-      link: "/yingyechang",
+      link: "/cunt",
     },
     {
       id: "quench",
