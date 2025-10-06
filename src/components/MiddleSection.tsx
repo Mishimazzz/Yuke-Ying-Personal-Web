@@ -50,7 +50,7 @@ function MiddleSection(){
       title: "CUNT Magazine",
       text: "I have a cunt, I must receive!",
       sub: "publication, 2022 spring",
-      img: "/picture/cunt.png",
+      img: "/picture/CUNT/CUNT_main.jpg",
       link: "/cunt",
     },
     {
@@ -117,7 +117,7 @@ function MiddleSection(){
       text: "我有一个阴道，我必须接受，也必须回应。",
       sub: "书籍，二零二二年春",
       img: "/picture/cunt.png",
-      link: "/yingyechang",
+      link: "/cunt",
     },
     {
       id: "quench_zh",

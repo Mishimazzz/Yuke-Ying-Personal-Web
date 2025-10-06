@@ -5,19 +5,18 @@ import { useLanguage } from '../components/LanguageContext';
 function CUNTTextPart()
 {
   const images = [
-    "/picture/yingyechang/yyc_3.png",
-    "/picture/yingyechang/yyc_4.png",
-    "/picture/yingyechang/yyc_5.png",
-    "/picture/yingyechang/yyc_6.png",
-    "/picture/yingyechang/yyc_7.png",
-    "/picture/yingyechang/yyc_8.png",
-    "/picture/yingyechang/yyc_9.png",
-    "/picture/yingyechang/yyc_10.png",
-    "/picture/yingyechang/yyc_11.png",
-    "/picture/yingyechang/yyc_12.png",
-    "/picture/yingyechang/yyc_13.png",
-    "/picture/yingyechang/yyc_14.png",
-    "/picture/yingyechang/yyc_15.png",
+    "/picture/CUNT/cunt_1 .jpg",
+    "/picture/CUNT/cunt_2 .jpg",
+    "/picture/CUNT/cunt_3 .jpg",
+    "/picture/CUNT/cunt_4 .jpg",
+    "/picture/CUNT/cunt_5 .jpg",
+    "/picture/CUNT/cunt_6 .jpg",
+    "/picture/CUNT/cunt_7 .jpg",
+    "/picture/CUNT/cunt_8 .jpg",
+    "/picture/CUNT/cunt_9 .jpg",
+    "/picture/CUNT/cunt_10 .jpg",
+    "/picture/CUNT/cunt_11 .jpg",
+    "/picture/CUNT/cunt_12 .jpg",
   ]
 
   // arrow slider
@@ -36,43 +35,38 @@ function CUNTTextPart()
           <h3
             className="title"
             onClick={() => setIsOpen(!isOpen)}>
-            {language === "zh" ? (<span className="zh-font" style={{ fontFamily: "HY Jin", fontSize: "21.6px", display: "inline-block" }}>应业長</span>) : ("CUNT Magazine")}
+            {language === "zh" ? (
+              <>
+                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>CUNT </span>
+                <span className="zh-font" style={{ fontFamily: "HY Jin", fontSize: "21.6px", display: "inline-block" }}>杂志</span>
+              </>
+            ) : (
+              "CUNT Magazine"
+            )}
           </h3>
           <div className={`content ${isOpen ? "open" : ""} ${language === "zh" ? "zh-font" : ""}`}>
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px"}}>
                 <br />
-                《应业長》（ <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma</span>）是一本为我年届<br />
-                八十五岁的爷爷应业长先生设计并制作的自传书。过去两年<br />
-                里，他亲笔写下万字回忆，并整理了一生的旧照片，试图留<br />
-                下一些可以流传的、能够证明自己存在的、比肉身相对更永<br />
-                恒的东西。
+                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>CUNT</span>
+                是一本我在学生时期自发创作的虚构杂志，关注在不同领域中创造、发明与表达的女性们。
+                这本杂志旨在直面她们的声音——她们的作品、生活，以及她们选择分享的想法。
+                重要的是她是谁，她迫切想说的是什么。
                 <br /><br />
-                全书分为文字与图像两部分。文字部分按时间顺序讲述他丰<br />
-                富的工作经历，背景暗藏他年老后的各式病症处方。我走访<br />
-                并拍摄了他曾经生活、工作过的地点——大多已废弃或被改<br />
-                建，这些照片也作为文字部分的背景补充。
-                <br /><br />
-                图像部分则收录了他自己拍摄或被拍摄的旧照片，并以倒叙<br />
-                方式编排，从晚年回望青年，呈现出他在不同阶段的容貌、<br />
-                处境以及陪伴在他身边的人。
+                创刊号的封面选用我非常喜爱的中国摄影师黎雨诗的作品。所有创作者均在杂志中完整署名，
+                且本刊完全无商业发行或印售。
               </p>
             ) : (
               <p style={{ maxWidth: "782px", lineHeight: "27.3px", fontSize: "17.8px" }}>
               <br />
-              <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma </span> 
-              is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
-              85. Over the past two years, he handwrote tens of thousands of words reflecting on his life,
-              and carefully compiled a collection of old photographs—hoping to leave behind something more
-              enduring than the body itself, something that could mark his presence beyond time.
+                  <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>CUNT </span> 
+                is a self-initiated, fictional magazine celebrating women who create, invent, and express 
+                across diverse fields. Each issue amplifies their voices—their work, their lives, and the ideas 
+                they choose to share. At its core, it is about who she is and what she has to say.
               <br /><br />
-              The book is divided into two parts: text and images. The written section presents a chronological
-              narrative of his working life, with subtle references to the illnesses and prescriptions that have
-              accompanied his old age. To accompany the text, I revisited and photographed the homes and
-              workplaces he once inhabited—many of which are now abandoned or transformed. The image
-              section consists of old photographs taken throughout his life. Arranged in reverse chronological
-              order, they trace his appearance, circumstances, and companions—from the present day back to
-              his youth.
+                The first issue features a cover photograph by Yushi Li (<span style={{ fontFamily: "HY Jin", fontSize: "16.2px" }}>黎雨诗</span>), 
+                one of my favorite Chinese photographers. Every contributor is fully credited, and the magazine is entirely non-commercial, 
+                with no distribution or sales.
             </p>
             )}
           </div>
@@ -108,10 +102,6 @@ function CUNTTextPart()
         />
       </div>
 
-      <div className="bottom-img">
-        <img src="/picture/yingyechang/yyc_17.jpg" alt="" style={{
-          transform: "translateX(90px) translateY(0px)", width: "1700px",height: "auto", }} />
-      </div>
     </div>
     
   );
