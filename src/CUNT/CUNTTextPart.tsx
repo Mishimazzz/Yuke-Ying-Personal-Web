@@ -1,4 +1,4 @@
-import "./CUNTTextPart.css"
+import styles from "./CUNTTextPart.module.css";
 import {useState} from 'react'
 import { useLanguage } from '../components/LanguageContext';
 
@@ -44,7 +44,10 @@ function CUNTTextPart()
               "CUNT Magazine"
             )}
           </h3>
-          <div className={`content ${isOpen ? "open" : ""} ${language === "zh" ? "zh-font" : ""}`}>
+            <div
+              className={`${styles.content} ${isOpen ? styles.open : ""} ${language === "zh" ? "zh-font" : ""
+                }`}
+            >
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px"}}>
                 <br />
@@ -80,7 +83,7 @@ function CUNTTextPart()
       </div>
       
       {/* slider */}
-      <div className="slider">
+      <div className={styles.slider}>
         <img
           src="/picture/yingyechang/arrowLeft.png"
           alt="prev_button"
