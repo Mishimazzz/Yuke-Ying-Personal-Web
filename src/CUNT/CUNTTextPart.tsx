@@ -1,4 +1,4 @@
-// import "./yycTextPart.css"
+import "./CUNTTextPart.css"
 import {useState} from 'react'
 import { useLanguage } from '../components/LanguageContext';
 
