@@ -48,7 +48,7 @@ function CUNTTextPart()
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px"}}>
                 <br />
-                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>CUNT</span>
+                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>CUNT </span>
                 是一本我在学生时期自发创作的虚构杂志，关注在不同领域中创造、发明与表达的女性们。
                 这本杂志旨在直面她们的声音——她们的作品、生活，以及她们选择分享的想法。
                 重要的是她是谁，她迫切想说的是什么。
@@ -72,8 +72,8 @@ function CUNTTextPart()
           </div>
         </div>
         {/* 默认1920宽 */}
-        <img src="picture/CUNT/cunt_0 .png" alt="" style={{ transform: "translateX(0px) rotate(10deg) scale(1.5)", marginTop: "180px" }} />
-        <p style={{ color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", fontSize:"17.8px" }}>
+        <img src="picture/CUNT/cunt_0 .png" alt="" style={{ transform: "translateX(250px) scale(1.2)", marginTop: "0px" }} />
+        <p style={{ color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", fontSize: "17.8px", width: "200px",textAlign:"left" }}>
           Size: 6.4 x 11 inch<br />
           Page count: 86 pages<br />
         </p>
