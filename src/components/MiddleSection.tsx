@@ -24,7 +24,7 @@ function MiddleSection(){
       text: "Only advocating for the arena of instinctive feelings in discourse.",
       sub: "publication, 2023 summer",
       img: "/picture/nainai.png",
-      link: "/yingyechang",
+      link: "/nainai",
     },
     {
       id: "no024",
@@ -89,8 +89,8 @@ function MiddleSection(){
       title: "nainai",
       text: "创造没有中央，没有异端，甚至没有姓名，只呼吁本能\n感受的言论竞技场。",
       sub: "书籍，二零二三年秋",
-      img: "/picture/nainai.png",
-      link: "/yingyechang",
+      img: "/picture/Nainai/nainai_main.png",
+      link: "/nainai",
     },
     {
       id: "no024_zh",

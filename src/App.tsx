@@ -3,6 +3,7 @@ import HomePage from "./HomePage";
 import YingYechang from "./YingYechangPage";
 import Cunt from "./CUNTPage";
 import ZeroTwoFour from "./024Page";
+import NaiNai from "./NainaiPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/yingyechang" element={<YingYechang />} />
           <Route path="/cunt" element={<Cunt />} />
           <Route path="/zerotwofour" element={<ZeroTwoFour />} />
+          <Route path="/nainai" element={<NaiNai />} />
         </Routes>
       </Router>
     </LanguageProvider>
