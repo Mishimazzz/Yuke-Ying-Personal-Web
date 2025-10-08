@@ -28,9 +28,9 @@ function NaiNaiTextPart() {
             className={styles.title}
             onClick={() => setIsOpen(!isOpen)}>
             {language === "zh" ? (
-              "No.024"
+              "nainai"
             ) : (
-              "No.024"
+              "nainai"
             )}
           </h3>
           <div
@@ -40,37 +40,40 @@ function NaiNaiTextPart() {
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
                 <br />
-                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>《No.024》</span>
-                是我在马里兰艺术学院平面设计硕士毕业项目的完整档案汇编。这本书收录了我的毕业论文、
-                项目过程与成果的记录、展览的筹备与呈现、致谢名单等内容。书中的文字与大部分图像均由我创作，
-                我也对其全权负责。 这个项目于我有很深的意义，它在我的旅途中轻轻按下一次暂停，又重重落下一颗石头。
+                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>nainai </span>
+                是我创立的同名品牌的衍生阅读物，聚焦中文语境下中老年女性性福用品。它采用报纸的形式，适应中老年群体的阅读习惯，同时在视觉上延续品牌包装风格，以大胆色彩和直白文字呈现主题。
+                <br /><br />
+                首期内容包括四篇专题文章（如性健康专家的知识普及、读者匿名投稿的性爱故事等），定期产品推荐、本地征友栏目，以及“nainai黄历”板块。我们借用报纸这一原始传播媒介，唤起人们对性的本能感知，尝试将中老年人性生活跳出黑箱。
+                <br /><br />
+                如报纸卷首语所言，nainai 旨在创造一个没有中央、没有异端审判、甚至没有姓名，只呼吁本能感受的言论竞技场。奶奶，你不必感到羞耻。
+
               </p>
             ) : (
-              <p style={{ maxWidth: "772px", lineHeight: "27.3px", fontSize: "17.8px" }}>
+              <p style={{ maxWidth: "767px", lineHeight: "27.3px", fontSize: "17.8px" }}>
                 <br />
-                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}> No.024  </span>
-                is a book that serves as the complete archive of my MFA thesis project in Graphic Design at MICA.
-                It compiles my thesis paper, project documentation, process notes, records of the exhibition's production
-                and presentation, experimental detours, and credit listings. All writing and most images in the book were created by me,
-                for which I take full authorship and responsibility.
-                This book holds deep personal meaning. It marks a pause along the path of my life, a moment of reflection. It’s a symbolic stone.
+                <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}> nainai  </span>
+                  is a print publication derived from my eponymous brand, which focuses on sexual wellness products for middle-aged and elderly women. Designed in the format of newspaper, it reflects the reading habits of older generations while visually echoing the brand’s packaging—featuring bold colors and suggestive language.
+                  <br /><br />
+                  The debut issue includes four articles (ranging from expert insights on sexual health to personal stories collected online), sexual product ads, a local dating section, and a "nainai almanac." By using the newspaper—a primitive yet familiar mode of communication—we aim to evoke a primal understanding of sexuality and normalize sexual experiences, especially in later life.
+                  <br /><br />
+                  As stated in the newspaper’s preface, nainai seeks to create an arena of discourse without a center, without heresy trials, without even names—only a call to speak from instinct. May every grandma (pronounced /nainai/ in Chinese) feel no shame about her desires.
               </p>
             )}
           </div>
         </div>
         {/* 默认1920宽 */}
-        <img src="picture/024/024_1.png" alt="" style={{ transform: "translateX(-450px) rotate(-5deg) scale(1.4)", marginTop: "150px" }} />
+        <img src="picture/Nainai/nainai_1.jpg" alt="" style={{ transform: "translateX(-450px) rotate(-5deg) scale(1.4)", marginTop: "150px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "200px", textAlign: "left" }}>
-            尺寸：203 × 254 mm<br />
-            页数：178 页<br />
-            校方统一印刷，仅此一本。<br />
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-pink)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "250px", textAlign: "left" }}>
+            尺寸：340 × 486 mm<br />
+            页数：4 跨页<br />
+            首刊由草蛇灰线出版小组发行。<br />
           </p>
         ) : (
-          <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "300px", textAlign: "left" }}>
-            Size: 203 × 254 mm<br />
-            Page count: 178 pages<br />
-            School-issued, single copy only.<br />
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-pink)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "400px", textAlign: "left" }}>
+            Size: 340 × 486 mm<br />
+            Page count: 4 spreads<br />
+            The debut issue published by Foreshadow Pub.<br />
           </p>
         )}
       </div>
