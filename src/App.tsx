@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
 import YingYechang from "./YingYechangPage";
 import Cunt from "./CUNTPage";
+import ZeroTwoFour from "./024Page";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/yingyechang" element={<YingYechang />} />
           <Route path="/cunt" element={<Cunt />} />
+          <Route path="/zerotwofour" element={<ZeroTwoFour />} />
         </Routes>
       </Router>
     </LanguageProvider>

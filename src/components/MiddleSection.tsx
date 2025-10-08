@@ -32,8 +32,8 @@ function MiddleSection(){
       title: "No. 024",
       text: "I am a number, a denominator of data, an insignificant component\n of structure. I have never been my own self.",
       sub: "publication, 2023 summer",
-      img: "/picture/no024.png",
-      link: "/yingyechang",
+      img: "/picture/024/024_main.png",
+      link: "/zerotwofour",
     },
     {
       id: "discipline",
@@ -98,8 +98,8 @@ function MiddleSection(){
       title: "No.024",
       text: "我是一个数字，是数据的分母，系统里无关紧要的元件。\n我从来都不是我自己。",
       sub: "书籍，二零二三年夏",
-      img: "/picture/no024.png",
-      link: "/yingyechang",
+      img: "/picture/024/024_main.png",
+      link: "/zerotwofour",
     },
     {
       id: "discipline_zh",
@@ -116,7 +116,7 @@ function MiddleSection(){
       title: "CUNT 杂志",
       text: "我有一个阴道，我必须接受，也必须回应。",
       sub: "书籍，二零二二年春",
-      img: "/picture/cunt.png",
+      img: "/picture/CUNT/CUNT_main.jpg",
       link: "/cunt",
     },
     {

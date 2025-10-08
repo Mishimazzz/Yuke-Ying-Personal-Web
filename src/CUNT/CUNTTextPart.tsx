@@ -33,7 +33,7 @@ function CUNTTextPart()
       <div className="middle-section" style={{ maxWidth: "800px" }}>
         <div className="text-box">
           <h3
-            className="title"
+            className={styles.title}
             onClick={() => setIsOpen(!isOpen)}>
             {language === "zh" ? (
               <>
@@ -76,10 +76,17 @@ function CUNTTextPart()
         </div>
         {/* 默认1920宽 */}
         <img src="picture/CUNT/cunt_0 .png" alt="" style={{ transform: "translateX(250px) scale(1.2)", marginTop: "0px" }} />
-        <p style={{ color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", fontSize: "17.8px", width: "200px",textAlign:"left" }}>
-          Size: 6.4 x 11 inch<br />
-          Page count: 86 pages<br />
-        </p>
+        {language === "zh" ? (
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", width: "200px", textAlign: "left" }}>
+              尺寸：6.4 × 11 inch<br />
+              页数：86 页<br />
+            </p>
+        ):(
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px",color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", width: "200px", textAlign: "left" }}>
+              Size: 6.4 x 11 inch<br />
+              Page count: 86 pages<br />
+            </p>
+        )}
       </div>
       
       {/* slider */}
