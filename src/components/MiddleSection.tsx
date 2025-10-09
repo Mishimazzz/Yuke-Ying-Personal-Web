@@ -18,12 +18,21 @@ function MiddleSection(){
       link:"/yingyechang",
     },
     {
+      id: "hkaga",
+      color: "var(--font-color-yellow)",
+      title: "HKAGA Art Guide",
+      // text: "I wake up, take my medicine, buy groceries, eat, urinate, \nwatch TV, and go to sleep. After all, tomorrow is another day.",
+      sub: "map, 2025 spring",
+      img: "",
+      link: "/yingyechang",
+    },
+    {
       id: "nainai1",
       color: "var(--font-color-pink)",
       title: "nainai",
       text: "Only advocating for the arena of instinctive feelings in discourse.",
       sub: "publication, 2023 summer",
-      img: "/picture/nainai.png",
+      img: "/picture/Nainai/nainai_main.png",
       link: "/nainai",
     },
     {

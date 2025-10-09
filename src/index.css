@@ -45,6 +45,14 @@ body, html
 :root
 {
   --font-color-orange:#ff5417;
+  --font-color-yellow:#ffdd1e;
+  --font-color-lightBlue:#7dd5ff;
+  --font-color-purple:#d77bd1;
+  --font-color-darkBlue:#6363d3;
+  --font-color-caofei:#53a8d4;
+  --font-color-cyber:#ff94a2;
+  --font-color-museum:#ff2da2;
+  --font-color-apotbeosis:#4ac7ae;
   --font-color-pink:#ffbfb8;
   --font-color-green:#00a644;
   --font-color-brown:#af8600;
