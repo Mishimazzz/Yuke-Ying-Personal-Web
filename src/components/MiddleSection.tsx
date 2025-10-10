@@ -108,7 +108,7 @@ function MiddleSection(){
       text: "Are human willing to be self-controlled? If so, do I have the\n courage to be different?",
       sub: "installation, 2023 summer",
       img: "/picture/discipline.png",
-      link: "/yingyechang",
+      link: "/disciplinearchive",
     },
     {
       id: "cunt",
@@ -231,7 +231,7 @@ function MiddleSection(){
       text: "人类是否自愿自发带上脚铐？如果是，我是否有走出洞\n穴的勇气？",
       sub: "装置，二零二三年夏",
       img: "/picture/discipline.png",
-      link: "/yingyechang",
+      link: "/disciplinearchive",
     },
     {
       id: "cunt_zh",
