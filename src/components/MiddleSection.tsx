@@ -39,7 +39,7 @@ function MiddleSection(){
       title: "Space City: Art in the Age of Artemis",
       sub: "exhibition, 2024 autumn",
       img: "",
-      link: "/yingyechang",
+      link: "/spacecity",
     },
     {
       id: "shadow",
@@ -162,7 +162,7 @@ function MiddleSection(){
       title: "Space City: Art in the Age of Artemis",
       sub: "展览，二零二五年秋",
       img: "",
-      link: "/yingyechang",
+      link: "/spacecity",
     },
     {
       id: "shadow_zh",

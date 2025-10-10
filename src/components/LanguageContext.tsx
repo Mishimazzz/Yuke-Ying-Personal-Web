@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 type Language = "zh" | "en";
 
@@ -11,11 +11,23 @@ interface LanguageContextType
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>("zh");
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem("lang") as Language | null;
+    return saved || "zh";
+  });
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "zh" ? "en" : "zh"));
+    setLanguage((prev) => {
+      const next = prev === "zh" ? "en" : "zh";
+      localStorage.setItem("lang", next);
+      return next;
+    });
   };
+
+  useEffect(() => {
+    const saved = localStorage.getItem("lang") as Language | null;
+    if (saved && saved !== language) setLanguage(saved);
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>
@@ -29,3 +41,4 @@ export const useLanguage = () => {
   if (!context) throw new Error("useLanguage must be used within LanguageProvider");
   return context;
 };
+

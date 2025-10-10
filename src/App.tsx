@@ -6,6 +6,7 @@ import ZeroTwoFour from "./024Page";
 import NaiNai from "./NainaiPage";
 import QuenchThirst from "./QuenchThirstPage";
 import DisciplineArchive from "./DisciplineArchivePage";
+import SpaceCity from "./SpaceCityPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/nainai" element={<NaiNai />} />
           <Route path="/quenchthirst" element={<QuenchThirst />} />
           <Route path="/disciplinearchive" element={<DisciplineArchive />} />
+          <Route path="/spacecity" element={<SpaceCity />} />
         </Routes>
       </Router>
     </LanguageProvider>
