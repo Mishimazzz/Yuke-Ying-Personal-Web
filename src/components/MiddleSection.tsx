@@ -126,7 +126,7 @@ function MiddleSection(){
       text: "It is futile to try to express the essence of a thing. The effects we perceive, and the complete history of these effects, are enough to define the essence of things.",
       sub: "publication, 2022 winter",
       img: "/picture/quench.png",
-      link: "/yingyechang",
+      link: "/quenchthirst",
     },
   ];
 
@@ -249,7 +249,7 @@ function MiddleSection(){
       text: "试图表达事物的本质是徒劳的。我们所感知的，以及感\n知背后的历史，已足够界定事物的本质。",
       sub: "书籍，二零二二年春",
       img: "/picture/quench.png",
-      link: "/yingyechang",
+      link: "/quenchthirst",
     },
   ];
 
