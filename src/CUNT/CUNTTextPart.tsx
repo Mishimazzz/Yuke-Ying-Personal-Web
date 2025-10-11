@@ -75,14 +75,14 @@ function CUNTTextPart()
           </div>
         </div>
         {/* 默认1920宽 */}
-        <img src="picture/CUNT/cunt_0 .png" alt="" style={{ transform: "translateX(250px) scale(1.2)", marginTop: "0px" }} />
+        <img src="picture/CUNT/cunt_0 .png" alt="" style={{ transform: "translateX(420px) scale(1.4)", marginTop: "100px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", width: "200px", textAlign: "left" }}>
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-340px) translateY(-400px)", width: "200px", textAlign: "left" }}>
               尺寸：6.4 × 11 inch<br />
               页数：86 页<br />
             </p>
         ):(
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px",color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-180px) translateY(-400px)", width: "200px", textAlign: "left" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px",color: "var(--font-color-red)", transform: " rotate(60deg) translateX(-340px) translateY(-400px)", width: "200px", textAlign: "left" }}>
               Size: 6.4 x 11 inch<br />
               Page count: 86 pages<br />
             </p>
