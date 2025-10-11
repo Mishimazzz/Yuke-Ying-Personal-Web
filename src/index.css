@@ -91,13 +91,13 @@ h4
   font-kerning: normal;
   letter-spacing: 0.05em;
   font-weight: 400;
-  margin-top: 0;
+  margin-top: 3px;
 }
 
 .left-section p,
 .right-section p,
 .middle-section p {
-  line-height: 30.4px;
+  line-height: 1.33;
 }
 
 .zh-font p,
@@ -117,7 +117,7 @@ h4
 @media screen and (max-width: 1920px){
   .left-section
   {
-    max-width:600px;
+    max-width:550px;
     margin-right: 102px;
   }
 

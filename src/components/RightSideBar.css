@@ -8,6 +8,12 @@
   margin-right: 27px;
 }
 
+.right-section p {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 .chinese
 {
   font-family: "HY Jin", serif;

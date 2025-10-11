@@ -3,7 +3,7 @@ import { useLanguage } from "./LanguageContext";
 
 function RightSideBar()
 {
-  const { language, toggleLanguage } = useLanguage();
+  const { toggleLanguage } = useLanguage();
 
   return(
     <div className="right-section">

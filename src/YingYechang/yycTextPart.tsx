@@ -57,7 +57,7 @@ function YycTextPart()
                 处境以及陪伴在他身边的人。
               </p>
             ) : (
-              <p style={{ maxWidth: "782px", lineHeight: "27.3px", fontSize: "17.8px" }}>
+              <p style={{ maxWidth: "767px", lineHeight: "27.3px", fontSize: "17.8px" }}>
               <br />
               <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Everlasting Good Karma </span> 
               is a memoir designed and produced for my grandfather, <span style={{ fontFamily: "HY Jin", fontSize:"16.2px"}}>应业长</span>, at the age of
@@ -72,7 +72,7 @@ function YycTextPart()
               section consists of old photographs taken throughout his life. Arranged in reverse chronological
               order, they trace his appearance, circumstances, and companions—from the present day back to
               his youth.
-            </p>
+                </p>
             )}
           </div>
         </div>
@@ -91,9 +91,9 @@ function YycTextPart()
               Page count: 304 pages<br />
               First edition: 200 copies<br />
               For reading only, not for sale.<br />
-            </p>
+            </p> 
         )}
-        <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(250px) rotate(0deg) scale(2.1)", marginTop: "100px" }} />
+        <img src="/picture/yingyechang/yyc_2.png" alt="" style={{ transform: "translateX(220px) rotate(0deg) scale(1.6)", marginTop: "00px" }} />
       </div>
       
       {/* slider */}

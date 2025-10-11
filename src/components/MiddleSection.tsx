@@ -38,7 +38,7 @@ function MiddleSection(){
       color: "var(--font-color-purple)",
       title: "Space City: Art in the Age of Artemis",
       sub: "exhibition, 2024 autumn",
-      img: "",
+      img: "/picture/SpaceCity/Space_main.png",
       link: "/spacecity",
     },
     {
@@ -55,7 +55,7 @@ function MiddleSection(){
       color: "var(--font-color-caofei)",
       title: "Cao Fei: Tidal Flux",
       sub: "exhibition, 2024 summer",
-      img: "",
+      img: "/picture/CaoFei/cftf_main.png",
       link: "/caifei",
     },
     {
@@ -63,7 +63,7 @@ function MiddleSection(){
       color: "var(--font-color-cyber)",
       title: "Cybernetics for the 21st Century",
       sub: "publication, 2023 winter",
-      img: "",
+      img: "/picture/Cyber/cybernetics_main.png",
       link: "/cyber",
     },
     {
@@ -107,7 +107,7 @@ function MiddleSection(){
       title: "Discipline Archive",
       text: "Are human willing to be self-controlled? If so, do I have the\n courage to be different?",
       sub: "installation, 2023 summer",
-      img: "/picture/discipline.png",
+      img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
     },
     {
@@ -116,7 +116,7 @@ function MiddleSection(){
       title: "CUNT Magazine",
       text: "I have a cunt, I must receive!",
       sub: "publication, 2022 spring",
-      img: "/picture/CUNT/CUNT_main.jpg",
+      img: "/picture/CUNT/CUNT_main.png",
       link: "/cunt",
     },
     {
@@ -125,7 +125,7 @@ function MiddleSection(){
       title: "Quench Thirst",
       text: "It is futile to try to express the essence of a thing. The effects we perceive, and the complete history of these effects, are enough to define the essence of things.",
       sub: "publication, 2022 winter",
-      img: "/picture/quench.png",
+      img: "/picture/QuenchThirst/quench_main.png",
       link: "/quenchthirst",
     },
   ];
