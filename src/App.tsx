@@ -8,6 +8,7 @@ import QuenchThirst from "./QuenchThirst/QuenchThirstPage";
 import DisciplineArchive from "./Discipline/DisciplineArchivePage";
 import SpaceCity from "./SpaceCity/SpaceCityPage";
 import CaiFei from "./CaiFei/CaiFeiPage";
+import Cyber from "./Cyber/CyberPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/disciplinearchive" element={<DisciplineArchive />} />
           <Route path="/spacecity" element={<SpaceCity />} />
           <Route path="/caifei" element={<CaiFei />} />
+          <Route path="/cyber" element={<Cyber />} />
         </Routes>
       </Router>
     </LanguageProvider>

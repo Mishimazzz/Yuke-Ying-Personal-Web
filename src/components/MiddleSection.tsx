@@ -64,7 +64,7 @@ function MiddleSection(){
       title: "Cybernetics for the 21st Century",
       sub: "publication, 2023 winter",
       img: "",
-      link: "/yingyechang",
+      link: "/cyber",
     },
     {
       id: "museum",
@@ -187,7 +187,7 @@ function MiddleSection(){
       title: "二十一世纪的控制论",
       sub: "书籍，二零二三年冬",
       img: "",
-      link: "/yingyechang",
+      link: "/cyber",
     },
     {
       id: "museum_zh",
