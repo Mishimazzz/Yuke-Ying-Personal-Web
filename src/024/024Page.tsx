@@ -1,6 +1,6 @@
-import LeftSideBar from './components/LeftSideBar'
-import RightSideBar from './components/RightSideBar'
-import ZeroTwoFourTextPart from './024/024TextPart'
+import LeftSideBar from '../components/LeftSideBar'
+import RightSideBar from '../components/RightSideBar'
+import ZeroTwoFourTextPart from './024TextPart'
 
 function ZeroTwoFour() {
   return (

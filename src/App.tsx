@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-import YingYechang from "./YingYechangPage";
-import Cunt from "./CUNTPage";
-import ZeroTwoFour from "./024Page";
-import NaiNai from "./NainaiPage";
-import QuenchThirst from "./QuenchThirstPage";
-import DisciplineArchive from "./DisciplineArchivePage";
-import SpaceCity from "./SpaceCityPage";
+import YingYechang from "./YingYechang/YingYechangPage";
+import Cunt from "./CUNT/CUNTPage";
+import ZeroTwoFour from "./024/024Page";
+import NaiNai from "./Nainai/NainaiPage";
+import QuenchThirst from "./QuenchThirst/QuenchThirstPage";
+import DisciplineArchive from "./Discipline/DisciplineArchivePage";
+import SpaceCity from "./SpaceCity/SpaceCityPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {

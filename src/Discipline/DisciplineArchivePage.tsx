@@ -1,6 +1,6 @@
-import LeftSideBar from './components/LeftSideBar'
-import RightSideBar from './components/RightSideBar'
-import DisciplineArchiveTextPart from './Discipline/DisciplineArchiveTextPart'
+import LeftSideBar from '../components/LeftSideBar'
+import RightSideBar from '../components/RightSideBar'
+import DisciplineArchiveTextPart from './DisciplineArchiveTextPart'
 function DisciplineArchive() {
   return (
     <div>
