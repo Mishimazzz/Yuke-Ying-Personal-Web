@@ -7,6 +7,7 @@ import NaiNai from "./Nainai/NainaiPage";
 import QuenchThirst from "./QuenchThirst/QuenchThirstPage";
 import DisciplineArchive from "./Discipline/DisciplineArchivePage";
 import SpaceCity from "./SpaceCity/SpaceCityPage";
+import CaiFei from "./CaiFei/CaiFeiPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/quenchthirst" element={<QuenchThirst />} />
           <Route path="/disciplinearchive" element={<DisciplineArchive />} />
           <Route path="/spacecity" element={<SpaceCity />} />
+          <Route path="/caifei" element={<CaiFei />} />
         </Routes>
       </Router>
     </LanguageProvider>

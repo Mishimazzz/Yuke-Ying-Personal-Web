@@ -56,7 +56,7 @@ function MiddleSection(){
       title: "Cao Fei: Tidal Flux",
       sub: "exhibition, 2024 summer",
       img: "",
-      link: "/yingyechang",
+      link: "/caifei",
     },
     {
       id: "cyber",
@@ -179,7 +179,7 @@ function MiddleSection(){
       title: "曹斐：潮汐宙合",
       sub: "展览，二零二四年夏",
       img: "",
-      link: "/yingyechang",
+      link: "/caifei",
     },
     {
       id: "cyber_zh",
