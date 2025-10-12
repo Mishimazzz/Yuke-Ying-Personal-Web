@@ -161,7 +161,7 @@ function MiddleSection(){
       color: "var(--font-color-purple)",
       title: "Space City: Art in the Age of Artemis",
       sub: "展览，二零二五年秋",
-      img: "",
+      img: "/picture/SpaceCity/Space_main.png",
       link: "/spacecity",
     },
     {
@@ -178,7 +178,7 @@ function MiddleSection(){
       color: "var(--font-color-caofei)",
       title: "曹斐：潮汐宙合",
       sub: "展览，二零二四年夏",
-      img: "",
+      img: "/picture/CaoFei/cftf_main.png",
       link: "/caifei",
     },
     {
@@ -186,7 +186,7 @@ function MiddleSection(){
       color: "var(--font-color-cyber)",
       title: "二十一世纪的控制论",
       sub: "书籍，二零二三年冬",
-      img: "",
+      img: "/picture/Cyber/cybernetics_main.png",
       link: "/cyber",
     },
     {
@@ -230,7 +230,7 @@ function MiddleSection(){
       title: "规训档案",
       text: "人类是否自愿自发带上脚铐？如果是，我是否有走出洞\n穴的勇气？",
       sub: "装置，二零二三年夏",
-      img: "/picture/discipline.png",
+      img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
     },
     {
@@ -239,7 +239,7 @@ function MiddleSection(){
       title: "CUNT 杂志",
       text: "我有一个阴道，我必须接受，也必须回应。",
       sub: "书籍，二零二二年春",
-      img: "/picture/CUNT/CUNT_main.jpg",
+      img: "/picture/CUNT/CUNT_main.png",
       link: "/cunt",
     },
     {
@@ -248,7 +248,7 @@ function MiddleSection(){
       title: "止渴",
       text: "试图表达事物的本质是徒劳的。我们所感知的，以及感\n知背后的历史，已足够界定事物的本质。",
       sub: "书籍，二零二二年春",
-      img: "/picture/quench.png",
+      img: "/picture/QuenchThirst/quench_main.png",
       link: "/quenchthirst",
     },
   ];
