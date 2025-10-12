@@ -44,8 +44,7 @@ function CyberTextPart() {
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
                 <br />
-                《二十一世纪的控制论卷一：认识论重构》由香港Hanart Press以开放获取的形式出版，主编为许煜。
-                本书聚焦于控制论的认识论重建，收录了一系列关于这一学科的历史性与批判性反思——在马丁·海德格尔
+                《二十一世纪的控制论卷一：认识论重构》由香港<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}> Hanart Press </span>以开放获取的形式出版，主编为许煜。本书聚焦于控制论的认识论重建，收录了一系列关于这一学科的历史性与批判性反思——在马丁·海德格尔
                 看来，控制论标志着西方形而上学的完成。
                 <br /><br />
                 我协助何翩翩与麦石工作室参与本书的内文版式与封面设计，并完整参与了排版与校对工作。
@@ -65,15 +64,15 @@ function CyberTextPart() {
         {/* 默认1920宽 */}
         <img src="/picture/Cyber/cybernetics_1.jpg" alt="" style={{ transform: "translateX(-470px) rotate(5deg) scale(1.15)", marginTop: "110px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-cyber)", transform: " rotate(5deg) translateX(400px) translateY(-630px)", width: "350px", textAlign: "left" }}>
-            尺寸：148 × 210 mm<br />
-            页数：271 页<br />
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-cyber)", transform: " rotate(5deg) translateX(400px) translateY(-630px)", width: "350px", textAlign: "left", letterSpacing: "1.2px" }}>
+            尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>148 × 210 mm</span><br />
+            页数：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>271 </span>页<br />
             语言：英语<br />
-            出版年份：2024<br />
+        出版年份：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>2024</span><br />
             艺术指导：何翩翩与麦石设计工作室<br />
           </p>
         ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-cyber)", transform: " rotate(5deg) translateX(400px) translateY(-630px)", width: "350px", textAlign: "left" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-cyber)", transform: " rotate(5deg) translateX(400px) translateY(-630px)", width: "350px", textAlign: "left", letterSpacing: "1.2px" }}>
             Size: 148 × 210 mm<br />
             Page count: 271 pages<br />
             Language: English<br />

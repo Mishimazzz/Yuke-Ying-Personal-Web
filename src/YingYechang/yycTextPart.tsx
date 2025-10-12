@@ -79,14 +79,14 @@ function YycTextPart()
         {/* 默认1920宽 */}
         <img src="/picture/yingyechang/yyc_1.png" alt="" style={{ transform: "translateX(-490px) rotate(10deg) scale(1.5)", marginTop: "180px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)" }}>
-            尺寸：142 × 210 mm<br />
-            页数：304 页<br />
-            首版：200 份<br />
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", letterSpacing: "1.2px" }}>
+            尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>142 × 210  mm</span><br />
+            页数：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>304</span>页<br />
+            首版：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>200</span>份<br />
             仅赠亲友阅读，无商业意图。<br />
           </p>
         ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", letterSpacing: "1.2px" }}>
               Size: 142 × 210 mm<br />
               Page count: 304 pages<br />
               First edition: 200 copies<br />

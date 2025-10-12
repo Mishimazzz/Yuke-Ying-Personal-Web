@@ -53,9 +53,7 @@ function ZeroTwoFourTextPart() {
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
                 <br />
                 <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>《No.024》</span>
-                是我在马里兰艺术学院平面设计硕士毕业项目的完整档案汇编。这本书收录了我的毕业论文、
-                项目过程与成果的记录、展览的筹备与呈现、致谢名单等内容。书中的文字与大部分图像均由我创作，
-                我也对其全权负责。 这个项目于我有很深的意义，它在我的旅途中轻轻按下一次暂停，又重重落下一颗石头。
+                是我在马里兰艺术学院平面设计硕士毕业项目的完整档案汇编。这本书收录了我的毕业论文、项目过程与成果的记录、展览的筹备与呈现、致谢名单等内容。书中的文字与大部分图像均由我创作，我也对其全权负责。 这个项目于我有很深的意义，它在我的旅途中轻轻按下一次暂停，又重重落下一颗石头。
               </p>
             ) : (
               <p style={{ maxWidth: "772px", lineHeight: "27.3px", fontSize: "17.8px" }}>
@@ -73,13 +71,13 @@ function ZeroTwoFourTextPart() {
         {/* 默认1920宽 */}
         <img src="picture/024/024_1.png" alt="" style={{ transform: "translateX(-450px) rotate(-5deg) scale(1.4)", marginTop: "150px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "200px", textAlign: "left" }}>
-            尺寸：203 × 254 mm<br />
-            页数：178 页<br />
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "250px", textAlign: "left", letterSpacing: "1.2px" }}>
+            尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>203 × 254 mm</span><br />
+            页数：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>178 </span>页<br />
             校方统一印刷，仅此一本。<br />
           </p>
         ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "300px", textAlign: "left" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-green)", transform: " rotate(-5deg) translateX(450px) translateY(-580px)", width: "300px", textAlign: "left", letterSpacing: "1.2px" }}>
             Size: 203 × 254 mm<br />
             Page count: 178 pages<br />
             School-issued, single copy only.<br />

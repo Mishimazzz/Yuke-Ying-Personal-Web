@@ -42,9 +42,7 @@ function SpaceCityTextPart() {
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
                 <br />
                 在美国计划重返月球的时代，位于“太空城”休斯顿的亚洲协会得克萨斯分会举办了名为 
-                “<span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Space City: Art in the Age of Artemis</span>” 的展览。展览汇集三十余位艺术家的作品，
-                贯穿宇宙、艺术、科学与人类好奇心。在展览的视觉设计中，我使用太空中的失重概念设计字体排印，
-                并完善制作了全展览的大小物料。
+                “<span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Space City: Art in the Age of Artemis</span>” 的展览。展览汇集三十余位艺术家的作品，贯穿宇宙、艺术、科学与人类好奇心。在展览的视觉设计中，我使用太空中的失重概念设计字体排印，并完善制作了全展览的大小物料。
               </p>
             ) : (
               <p style={{ maxWidth: "770px", lineHeight: "27.3px", fontSize: "17.8px" }}>
@@ -67,13 +65,13 @@ function SpaceCityTextPart() {
         {/* 默认1920宽 */}
         <img src="/picture/SpaceCity/Space_1.JPG" alt="" style={{ transform: "translateX(-300px) rotate(2deg) scale(1.6)", marginTop: "230px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-purple)", transform: " rotate(2deg) translateX(760px) translateY(-695px)", width: "330px", textAlign: "left" }}>
+          <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-purple)", transform: " rotate(2deg) translateX(760px) translateY(-695px)", width: "330px", textAlign: "left", letterSpacing: "1.2px" }}>
             客户：亚洲协会得克萨斯分会<br />
             艺术指导：何翩翩与麦石设计工作室<br />
-            封面图片：James Clar<br />
+            封面图片：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>James Clar</span><br />
           </p>
         ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-purple)", transform: " rotate(2deg) translateX(760px) translateY(-695px)", width: "330px", textAlign: "left" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-purple)", transform: " rotate(2deg) translateX(760px) translateY(-695px)", width: "380px", textAlign: "left", letterSpacing: "1.2px" }}>
             Client: Asia Society Texas<br />
             AD: Studio Pianpian He and Max Harvey<br />
             Cover Image: James Clar<br />

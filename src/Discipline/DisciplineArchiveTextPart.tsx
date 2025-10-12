@@ -38,15 +38,12 @@ function DisciplineArchiveTextPart() {
             {language === "zh" ? (
               <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
                 <br />
-                对“正常”的裁决随处可见，由整个社会操控。我们自动自发地调节自我的行为，使其接近社会的标准，
-                而不去质疑决定现实的权力结构。《规训档案》是我对我二十四年来追求并巩固“正确”“正常”定义的反
-                思，为理解自我和权力系统之间的关系提供一种解读视角。人类是否自愿自发带上脚铐？如果是，
-                我又是否有走出洞穴的勇气？
+                对“正常”的裁决随处可见，由整个社会操控。我们自动自发地调节自我的行为，使其接近社会的标准，而不去质疑决定现实的权力结构。《规训档案》是我对我二十四年来追求并巩固“正确”“正常”定义的反
+                思，为理解自我和权力系统之间的关系提供一种解读视角。人类是否自愿自发带上脚铐？如果是，我又是否有走出洞穴的勇气？
                 <br /><br />
                 这个项目由装在档案袋中的二十四张丝网印刷海报组成，每张海报对应一个伴随成长的规训物件或观念
                 ——如身份证、字帖、校服、交通规则、宗教信仰、简历、社会话语、亲密关系、医疗处方等。绿色油墨
-                印在牛皮纸上，象征“正确”或“通行”，过分鲜艳饱和的颜色传递出一种“有毒”的感受，暗示“正常性”
-                概念所带来的压迫。随着海报顺序推进，绿色油墨的覆盖也逐渐增多，是一道个体逐渐趋于社会“正常
+                印在牛皮纸上，象征“正确”或“通行”，过分鲜艳饱和的颜色传递出一种“有毒”的感受，暗示“正常性”概念所带来的压迫。随着海报顺序推进，绿色油墨的覆盖也逐渐增多，是一道个体逐渐趋于社会“正常
                 人”规范的轨迹。
               </p>
             ) : (
@@ -69,14 +66,14 @@ function DisciplineArchiveTextPart() {
         <img src="/picture/Displine/displine_1.jpg" alt="" style={{ transform: "translateX(180px) rotate(0deg) scale(1.45)", marginTop: "180px" }} />
         <img src="/picture/Displine/displine_2.jpg" alt="" style={{ transform: "translateX(-350px) rotate(0deg) scale(1.45)", marginTop: "300px" }} />
         {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-brown)", transform: " rotate(0deg) translateX(670px) translateY(-660px)", width: "250px", textAlign: "left" }}>
-            单张尺寸：300 × 420 mm<br />
-            档案袋尺寸：350 × 500 mm<br />
+          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-brown)", transform: " rotate(0deg) translateX(670px) translateY(-660px)", width: "250px", textAlign: "left", letterSpacing: "1.2px" }}>
+            单张尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>300 × 420 mm</span><br />
+            档案袋尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>350 × 500 mm</span><br />
             无再版印制。<br />
             由草蛇灰线出版小组发行。<br />
           </p>
         ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-brown)", transform: " rotate(0deg) translateX(670px) translateY(-660px)", width: "300px", textAlign: "left" }}>
+            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-brown)", transform: " rotate(0deg) translateX(670px) translateY(-660px)", width: "300px", textAlign: "left", letterSpacing: "1.2px" }}>
             Single sheet size: 300 × 420 mm<br />
             Archive size: 350 × 500 mm<br />
             Not subject to reprint.<br />

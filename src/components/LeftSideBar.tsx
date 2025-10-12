@@ -21,7 +21,7 @@ function LeftSideBar()
                 <br /><br />
                 欢迎任何形式的交流、委任与合作。<br />
                 邮箱&nbsp;&nbsp;&nbsp;<span style={{ fontFamily:"GT Alpina"}}>aoaoying.work@gmail.com</span><br />
-                电话&nbsp;&nbsp;&nbsp;⑧⑥158−8899−0202
+                电话&nbsp;&nbsp;&nbsp;<span style={{ fontFamily: "GT Alpina" }}>⑧⑥158−8899−0202</span>
               </p>
             </div>
           ) : (
