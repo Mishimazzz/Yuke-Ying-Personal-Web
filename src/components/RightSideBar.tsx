@@ -3,7 +3,7 @@ import { useLanguage } from "./LanguageContext";
 
 function RightSideBar()
 {
-  const { language,toggleLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   const setLanguage = (lang: "zh" | "en") =>
   {
