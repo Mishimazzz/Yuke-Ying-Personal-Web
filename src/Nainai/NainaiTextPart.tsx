@@ -1,4 +1,4 @@
-import styles from "./NaiNaiTextPart.module.css";
+import styles from "./NainaiTextPart.module.css";
 import { useState } from 'react'
 import { useLanguage } from '../components/LanguageContext';
 
