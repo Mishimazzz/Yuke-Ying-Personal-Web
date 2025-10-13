@@ -256,19 +256,26 @@ function MiddleSection(){
   return(
     <div className="middle-section">
       {language === "zh" ? (
-        <div className="Text-Container zh-font">
+        <div className="Text-Container">
           {zh_items.map((zh_items) => (
             <div
               key={zh_items.id}
               onMouseEnter={() => setHovered(zh_items.img)}
               onMouseLeave={() => setHovered(null)}
             >
-              <Link to={zh_items.link} style={{ textDecoration: "none", color: zh_items.color }}>
-                <h3>{zh_items.title}</h3>
+              <Link
+                to={zh_items.link}
+                style={{ textDecoration: "none", color: zh_items.color }}
+              >
+                <h3
+                  className={
+                    /[a-zA-Z]/.test(String(zh_items.title)) ? "en-font" : "zh-font"
+                  }
+                >
+                  {zh_items.title}
+                </h3>
                 <p>{zh_items.text}</p>
-                <h4>
-                  {zh_items.sub}
-                </h4>
+                <h4>{zh_items.sub}</h4>
               </Link>
             </div>
           ))}
