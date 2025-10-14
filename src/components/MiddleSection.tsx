@@ -268,18 +268,15 @@ function MiddleSection(){
                 style={{ textDecoration: "none", color: zh_items.color }}
               >
                 <h3
-                  className={
-                    /[a-zA-Z]/.test(String(zh_items.title)) ? "en-font" : "zh-font"
-                  }
+                  className={/[a-zA-Z]/.test(String(zh_items.title)) ? "en-font" : "zh-font"}
                 >
                   {zh_items.title}
                 </h3>
-                <p>{zh_items.text}</p>
-                <h4>{zh_items.sub}</h4>
+                <p className="zh-font">{zh_items.text}</p>
+                <h4 className="zh-font">{zh_items.sub}</h4>
               </Link>
             </div>
           ))}
-
           {hovered && (
             <div className="preview">
               <img src={hovered} alt="preview" />
