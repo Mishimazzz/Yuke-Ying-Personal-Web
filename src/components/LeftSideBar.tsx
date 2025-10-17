@@ -2,6 +2,7 @@ import "./LeftSideBar.css";
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom";
 import { useLanguage } from './LanguageContext';
+
 function LeftSideBar()
 {
   // 根据location去更改文字信息
@@ -38,7 +39,7 @@ function LeftSideBar()
         ) : (
           language === "zh" ? (
             <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
-              <p style={{ fontFamily: "HY Jin", fontSize: "21.6px" }}>应凹凹做了些平面设计。</p>
+                <p style={{ fontFamily: "HY Jin", fontSize: "19.2px", letterSpacing: "0.03em" }}>应凹凹做了些平面设计。</p>
             </Link>
           ) : (
             <div>
@@ -56,7 +57,7 @@ function LeftSideBar()
             <p>应凹凹做了点摄影。 ↩</p>
         </div>
         ) : (
-          <div className="BottomBar">
+          <div className="BottomBar en-font">
               <p>Aoao Ying Photography. ↩</p>
           </div>
         )

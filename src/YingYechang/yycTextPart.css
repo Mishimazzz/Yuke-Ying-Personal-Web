@@ -15,12 +15,6 @@
   object-fit: contain;
 }
 
-.content p {
-  font-size: 16.2px;
-  line-height:27.3px;
-  /* max-width: 430px;中文的尺寸大小 */
-}
-
 .text-box .content {
   max-height: 0;
   overflow: hidden;
@@ -66,4 +60,17 @@
   height: 100%;
   width: auto;
   object-fit: cover;
+}
+
+.yyc-image {
+  transform: translateX(var(--x)) rotate(var(--rotate)) scale(var(--scale));
+  margin-top: var(--top);
+}
+
+@media screen and (max-width: 1280px) {
+  .yyc-image {
+    transform: translateX(calc(var(--x) * 0.2 - 300px)) rotate(var(--rotate)) scale(calc(var(--scale) * 0.9));
+    margin-top: calc(var(--top) * 0.7);
+  }
+
 }

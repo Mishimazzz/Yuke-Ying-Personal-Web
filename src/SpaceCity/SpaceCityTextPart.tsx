@@ -39,17 +39,17 @@ function SpaceCityTextPart() {
               }`}
           >
             {language === "zh" ? (
-              <p style={{ maxWidth: "430px", lineHeight: "27.3px", fontSize: "16.2px" }}>
+              <p style={{ maxWidth: "550px", lineHeight: "25px", fontSize: "14.5px" }}>
                 <br />
                 在美国计划重返月球的时代，位于“太空城”休斯顿的亚洲协会得克萨斯分会举办了名为 
-                “<span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}>Space City: Art in the Age of Artemis</span>” 的展览。展览汇集三十余位艺术家的作品，贯穿宇宙、艺术、科学与人类好奇心。在展览的视觉设计中，我使用太空中的失重概念设计字体排印，并完善制作了全展览的大小物料。
+                “<span style={{ fontFamily: "GT Alpina Italic", fontSize: "15.5px" }}>Space City: Art in the Age of Artemis</span>” 的展览。展览汇集三十余位艺术家的作品，贯穿宇宙、艺术、科学与人类好奇心。在展览的视觉设计中，我使用太空中的失重概念设计字体排印，并完善制作了全展览的大小物料。
               </p>
             ) : (
-              <p style={{ maxWidth: "770px", lineHeight: "27.3px", fontSize: "17.8px" }}>
+              <p style={{ maxWidth: "700px", lineHeight: "25px", fontSize: "15.5px",letterSpacing:"0.02em" }}>
                 <br />
                 In the era of America’s renewed mission to the Moon, Asia Society Texas in 
                 Houston—familiarly known as “Space City”—presents the exhibition 
-                  <span style={{ fontFamily: "GT Alpina Italic", fontSize: "17.8px" }}> Space City: Art in the Age of Artemis</span> . 
+                  <span style={{ fontFamily: "GT Alpina Italic", fontSize: "15.5px" }}> Space City: Art in the Age of Artemis</span> . 
                 Featuring works by more than 30 artists, the show travels through art, science, 
                 and human curiosity, inviting visitors to embark on an imaginative journey 
                 across the cosmos.
