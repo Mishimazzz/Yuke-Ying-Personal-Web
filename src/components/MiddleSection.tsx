@@ -236,7 +236,7 @@ function MiddleSection(){
     {
       id: "cunt_zh",
       color: "var(--font-color-red)",
-      title: "CUNT 杂志",
+      title: "CUNT",
       text: "我有一个阴道，我必须接受，也必须回应。",
       sub: "书籍，二零二二年春",
       img: "/picture/CUNT/CUNT_main.png",
