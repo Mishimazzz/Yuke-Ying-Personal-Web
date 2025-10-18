@@ -20,7 +20,7 @@ function MiddleSection(){
       id: "karma",
       color: "var(--font-color-orange)",
       title: "Everlasting Good Karma",
-      text: "I wake up, take my medicine, buy groceries, eat, urinate, watch TV, and go to sleep. After all, tomorrow is another day.",
+      text: "I wake up, take my medicine, buy groceries, eat, urinate, \nwatch TV, and go to sleep. After all, tomorrow is another day.",
       sub: "publication, 2025 spring",
       img: "/picture/yingyechang/yyc_main.png",
       link:"/yingyechang",
