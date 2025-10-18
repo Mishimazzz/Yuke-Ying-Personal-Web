@@ -3,16 +3,24 @@ import { Link } from "react-router-dom";
 import {useLanguage} from './LanguageContext';
 import { useState } from "react";
 function MiddleSection(){
-  const [hovered, setHovered] = useState<string | null>(null);
+  const [hovered, setHovered] = useState<typeof items[0] | null>(null);
   const { language } = useLanguage();
 
   const items = 
   [
     {
+      id: "Hailun",
+      color: "var(--font-color-Hailun)",
+      title: "Hailun Ma: Üruklyn",
+      sub: "publication, 2025 summer",
+      img: "",
+      link: "",
+    }, 
+    {
       id: "karma",
       color: "var(--font-color-orange)",
       title: "Everlasting Good Karma",
-      text: "I wake up, take my medicine, buy groceries, eat, urinate, \nwatch TV, and go to sleep. After all, tomorrow is another day.",
+      text: "I wake up, take my medicine, buy groceries, eat, urinate, watch TV, and go to sleep. After all, tomorrow is another day.",
       sub: "publication, 2025 spring",
       img: "/picture/yingyechang/yyc_main.png",
       link:"/yingyechang",
@@ -80,8 +88,9 @@ function MiddleSection(){
       title: "Apotheosis",
       sub: "publication, 2023 autumn",
       text:"How empty and idle, can’t help finding anything to deifying.",
-      img: "",
+      img: "/picture/Apotheosis/Apotheosis_main.png",
       link: "/yingyechang",
+      className: "apotheosis"
     },
     {
       id: "nainai",
@@ -96,16 +105,17 @@ function MiddleSection(){
       id: "no024",
       color: "var(--font-color-green)",
       title: "No. 024",
-      text: "I am a number, a denominator of data, an insignificant component\n of structure. I have never been my own self.",
+      text: "I am a number, a denominator of data, an insignificant component of structure. I have never been my own self.",
       sub: "publication, 2023 summer",
       img: "/picture/024/024_main.png",
       link: "/zerotwofour",
+      className:"noZeroTwoFour"
     },
     {
       id: "discipline",
       color: "var(--font-color-brown)",
       title: "Discipline Archive",
-      text: "Are human willing to be self-controlled? If so, do I have the\n courage to be different?",
+      text: "Are human willing to be self-controlled? If so, do I have the courage to be different?",
       sub: "installation, 2023 summer",
       img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
@@ -132,10 +142,18 @@ function MiddleSection(){
 
   const zh_items = [
     {
+      id: "Hailun",
+      color: "var(--font-color-Hailun)",
+      title: "马海伦：乌鲁克林",
+      sub: "书籍，二零二五年夏",
+      img: "",
+      link: "",
+    }, 
+    {
       id: "karma_zh",
       color: "var(--font-color-orange)",
       title: "应业長",
-      text: "我每天醒来、吃药、买菜、吃、拉、看电视、然后睡觉。\n我再醒来，明天又是新的一天了。",
+      text: "我每天醒来、吃药、买菜、吃、拉、看电视、然后睡觉。我再醒来，明天又是新的一天了。",
       sub: "书籍，二零二五年春",
       img: "/picture/yingyechang/yyc_main.png",
       link: "/yingyechang",
@@ -203,14 +221,15 @@ function MiddleSection(){
       title: "崇拜",
       text: "何其空怠，惟能崇拜。",
       sub: "书籍，二零二三秋",
-      img: "",
+      img: "/picture/Apotheosis/Apotheosis_main.png",
       link: "/yingyechang",
+      className: "apotheosis"
     },
     {
       id: "nainai_zh",
       color: "var(--font-color-pink)",
       title: "nainai",
-      text: "创造没有中央，没有异端，甚至没有姓名，只呼吁本能\n感受的言论竞技场。",
+      text: "创造没有中央，没有异端，甚至没有姓名，只呼吁本能感受的言论竞技场。",
       sub: "书籍，二零二三年秋",
       img: "/picture/Nainai/nainai_main.png",
       link: "/nainai",
@@ -219,16 +238,17 @@ function MiddleSection(){
       id: "no024_zh",
       color: "var(--font-color-green)",
       title: "No.024",
-      text: "我是一个数字，是数据的分母，系统里无关紧要的元件。\n我从来都不是我自己。",
+      text: "我是一个数字，是数据的分母，系统里无关紧要的元件。我从来都不是我自己。",
       sub: "书籍，二零二三年夏",
       img: "/picture/024/024_main.png",
       link: "/zerotwofour",
+      className: "noZeroTwoFour"
     },
     {
       id: "discipline_zh",
       color: "var(--font-color-brown)",
       title: "规训档案",
-      text: "人类是否自愿自发带上脚铐？如果是，我是否有走出洞\n穴的勇气？",
+      text: "人类是否自愿自发带上脚铐？如果是，我是否有走出洞穴的勇气？",
       sub: "装置，二零二三年夏",
       img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
@@ -246,7 +266,7 @@ function MiddleSection(){
       id: "quench_zh",
       color: "var(--font-color-blue)",
       title: "止渴",
-      text: "试图表达事物的本质是徒劳的。我们所感知的，以及感\n知背后的历史，已足够界定事物的本质。",
+      text: "试图表达事物的本质是徒劳的。我们所感知的，以及感知背后的历史，已足够界定事物的本质。",
       sub: "书籍，二零二二年春",
       img: "/picture/QuenchThirst/quench_main.png",
       link: "/quenchthirst",
@@ -260,7 +280,7 @@ function MiddleSection(){
           {zh_items.map((zh_items) => (
             <div
               key={zh_items.id}
-              onMouseEnter={() => setHovered(zh_items.img)}
+              onMouseEnter={() => setHovered(zh_items)}
               onMouseLeave={() => setHovered(null)}
             >
               <Link
@@ -278,8 +298,8 @@ function MiddleSection(){
             </div>
           ))}
           {hovered && (
-            <div className="preview">
-              <img src={hovered} alt="preview" />
+            <div className={`preview ${hovered.className}`}>
+              <img src={hovered.img} alt="preview" />
             </div>
           )}
         </div>
@@ -288,7 +308,7 @@ function MiddleSection(){
             {items.map((item) => (
               <div
                 key={item.id}
-                onMouseEnter={() => setHovered(item.img)}
+                onMouseEnter={() => setHovered(item)}
                 onMouseLeave={() => setHovered(null)}
               >
                 <Link to={item.link} style={{ textDecoration: "none", color: item.color }}>
@@ -302,8 +322,8 @@ function MiddleSection(){
             ))}
 
             {hovered && (
-              <div className="preview">
-                <img src={hovered} alt="preview" />
+              <div className={`preview ${hovered.className}`}>
+                <img src={hovered.img} alt="preview" />
               </div>
             )}
           </div>
