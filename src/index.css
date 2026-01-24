@@ -171,23 +171,52 @@ h4
 
 } */
 
-/*iphone*/
 @media screen and (max-width: 480px) {
-  .left-section {
-    max-width: 480px;
-  }
-
-  .middle-section {
-    width:100%;
+  .sep { display: none; }
+  .eg-font { max-width: 300px; }
+  .eg-font2 { max-width: 500px; }
+  .left-section .BottomBar{
+    display: block !important;
     margin-left: 44px !important;
-    margin-top: 250px !important;
-    max-height: 400px;
+    margin-bottom: 40px !important;
+    align-items: unset !important;
   }
 
-  .right-section {
-    max-width: 480px;
+  .bottombar
+  {
+    height: 40px !important;
+  }
+
+  .left-section{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 160px;
+    z-index: 1000;
+    background: #fff;
+  }
+
+  .middle-section{
+    position: fixed;
+    top: 280px;
+    left: 44px;
+    right: 0;
+
+    height: calc(100vh - 400px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    margin: 0 !important;         /* 避免 margin 干扰 */
+    padding: 0;                   /* 需要的话自己加 */
+    clip-path: none !important;
+    z-index: 1;
+  }
+
+  .middle-section{
+    max-width: 400px;   /* 或 width: 400px; */
   }
 }
+
+
 
 /* ipad */
 @media screen and (max-width: 1024px) {}
