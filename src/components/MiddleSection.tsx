@@ -13,8 +13,9 @@ function MiddleSection(){
       color: "var(--font-color-Hailun)",
       title: "Hailun Ma: Üruklyn",
       sub: "publication, 2025 summer",
-      img: "",
+      img: "/picture/uruklyn/uruklyn_main.png",
       link: "",
+      className:"uruklyn"
     }, 
     {
       id: "karma",
@@ -49,6 +50,7 @@ function MiddleSection(){
       sub: "exhibition, 2024 autumn",
       img: "/picture/SpaceCity/Space_main.png",
       link: "/spacecity",
+      className:"space"
     },
     {
       id: "shadow",
@@ -147,8 +149,9 @@ function MiddleSection(){
       color: "var(--font-color-Hailun)",
       title: "马海伦：乌鲁克林",
       sub: "书籍，二零二五年夏",
-      img: "",
+      img: "/picture/uruklyn/uruklyn_main.png",
       link: "",
+      className:"uruklyn"
     }, 
     {
       id: "karma_zh",
@@ -183,6 +186,7 @@ function MiddleSection(){
       sub: "展览，二零二五年秋",
       img: "/picture/SpaceCity/Space_main.png",
       link: "/spacecity",
+      className:"space"
     },
     {
       id: "shadow_zh",

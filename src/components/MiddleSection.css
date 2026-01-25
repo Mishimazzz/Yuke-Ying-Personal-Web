@@ -42,14 +42,3 @@
   object-fit: contain;
 }
 
-.preview.noZeroTwoFour img {
-  position: absolute;
-  top: 130px;
-  transform: translateX(calc(100px + (min(100vw, 1920px) - 1280px) * (790 / 640))) scale(0.6);
-}
-
-.preview.apotheosis img {
-  position: absolute;
-  top: -140px;
-  transform: translateX(calc(10px + (clamp(1280px, 100vw, 1920px) - 1280px) * 1.2)) scale(0.65);
-}

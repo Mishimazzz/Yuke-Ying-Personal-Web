@@ -278,3 +278,40 @@ h4
 
 }
 
+/* 1920x1080 */
+@media screen and (max-width: 1920px) 
+{
+
+  .preview{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .preview img{
+    position: fixed;
+    object-fit: contain;
+    max-width: none;
+    max-height: none;
+  }
+
+
+  .preview.yyc img{
+    left: 900px; 
+    top: 10px;
+  }
+
+  .preview.uruklyn img{
+    left: 90px; 
+    top: 350px;
+    scale: 95%;
+  }
+
+  .preview.space img{
+    left: 1100px; 
+    top: 10px;
+    scale: 90%;
+  }
+  
+}
