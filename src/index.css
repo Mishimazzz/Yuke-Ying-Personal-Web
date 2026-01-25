@@ -173,8 +173,8 @@ h4
 
 @media screen and (max-width: 480px) {
   .sep { display: none; }
-  .eg-font { max-width: 300px; }
-  .eg-font2 { max-width: 500px; }
+  .eg-font { max-width: 60vw; }
+  .eg-font2 { max-width: 90vw; }
   .left-section .BottomBar{
     display: block !important;
     margin-left: 44px !important;
@@ -205,19 +205,29 @@ h4
     overflow-y: auto;
     overflow-x: hidden;
 
-    margin: 0 !important;         /* 避免 margin 干扰 */
-    padding: 0;                   /* 需要的话自己加 */
+    margin: 0 !important;
+    padding: 0;
     clip-path: none !important;
     z-index: 1;
   }
 
   .middle-section{
-    max-width: 400px;   /* 或 width: 400px; */
+    max-width: 400px;
   }
 }
 
 
 
 /* ipad */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1280px) 
+{
+  .left-section {
+    max-width: 730px;
+  }
+
+  .preview.yyc img {
+  position: absolute;
+  transform: translateX(calc(590px + (min(100vw, 1920px) - 1280px) * (790 / 640)));
+}
+}
 

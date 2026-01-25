@@ -24,13 +24,14 @@ function MiddleSection(){
       sub: "publication, 2025 spring",
       img: "/picture/yingyechang/yyc_main.png",
       link:"/yingyechang",
+      className:"yyc"
     },
     {
       id: "hkaga",
       color: "var(--font-color-yellow)",
       title: "HKAGA Art Guide",
       sub: "map, 2025 spring",
-      img: "/picture/HKAGA/HKAGA_main_en.png",
+      img: "/picture/HKAGA/HKAGA_main.png",
       link: "",
     },
     {
@@ -157,13 +158,14 @@ function MiddleSection(){
       sub: "书籍，二零二五年春",
       img: "/picture/yingyechang/yyc_main.png",
       link: "/yingyechang",
+      className:"yyc"
     },
     {
       id: "hkaga_zh",
       color: "var(--font-color-yellow)",
       title: "香港画廊协会艺术指南",
       sub: "地图，二零二五年春",
-      img: "/picture/HKAGA/HKAGA_main_cn.png",
+      img: "/picture/HKAGA/HKAGA_main",
       link: "",
     },
     {
