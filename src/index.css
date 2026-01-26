@@ -298,8 +298,8 @@ h4
 
 
   .preview.yyc img{
-    left: 900px; 
-    top: 10px;
+    left: 920px; 
+    top: 15px;
   }
 
   .preview.uruklyn img{
@@ -312,6 +312,78 @@ h4
     left: 1100px; 
     top: 10px;
     scale: 90%;
+  }
+
+  .preview.hkaga img{
+    left: 210px; 
+    top: 150px;
+    scale: 100%;
+  }
+
+  .preview.shadow img{
+    left: 0px; 
+    top: 310px;
+    scale: 90%;
+  }
+
+  .preview.cyber img{
+    left: 750px; 
+    top: 0px;
+    scale: 85%;
+  }
+
+  .preview.LG img{
+    left: 700px; 
+    top: 250px;
+    scale: 85%;
+  }
+
+  .preview.cftd img{
+    left: 980px; 
+    top: 210px;
+    scale: 85%;
+  }
+
+  .preview.quench img{
+    left: 100px; 
+    top: 350px;
+    scale: 100%;
+  }
+
+  .preview.nainai img{
+    left: 80px; 
+    top: 290px;
+    scale: 95%;
+  }
+
+  .preview.discipline img{
+    left: 200px; 
+    top: 170px;
+    scale: 95%;
+  }
+
+  .preview.cunt img{
+    left: 1050px; 
+    top: 130px;
+    scale: 95%;
+  }
+
+  .preview.museum img{
+    left: 1000px; 
+    top: 350px;
+    scale: 100%;
+  }
+
+  .preview.apotheosis img{
+    left: 950px; 
+    top: 0px;
+    scale: 100%;
+  }
+
+  .preview.noZeroTwoFour img{
+    left: 1100px; 
+    top: 420px;
+    scale: 100%;
   }
   
 }

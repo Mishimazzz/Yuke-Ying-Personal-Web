@@ -34,14 +34,16 @@ function MiddleSection(){
       sub: "map, 2025 spring",
       img: "/picture/HKAGA/HKAGA_main.png",
       link: "",
+      className:"hkaga"
     },
     {
       id: "grass",
       color: "var(--font-color-lightBlue)",
       title: "Solveig Qu Suess: Little Grass",
       sub: "posters, 2025 spring",
-      img: "",
+      img: "/picture/LG/LG_main.png",
       link: "/yingyechang",
+      className: "LG"
     },
     {
       id: "spaceCity",
@@ -58,16 +60,18 @@ function MiddleSection(){
       title: "The Shadow of Metaphor",
       text: "Illness is the night side of life, a more onerous citizenship.",
       sub: "publication, 2024 autumn",
-      img: "",
+      img: "/picture/shadow/shadow_main.png",
       link: "/yingyechang",
+      className:"shadow"
     },
     {
       id: "caoFei",
       color: "var(--font-color-caofei)",
       title: "Cao Fei: Tidal Flux",
       sub: "exhibition, 2024 summer",
-      img: "/picture/CaoFei/cftf_main.png",
+      img: "/picture/CaoFei/cftd_main.png",
       link: "/caifei",
+      className:"cftd"
     },
     {
       id: "cyber",
@@ -76,14 +80,16 @@ function MiddleSection(){
       sub: "publication, 2023 winter",
       img: "/picture/Cyber/cybernetics_main.png",
       link: "/cyber",
+      className:"cyber"
     },
     {
       id: "museum",
       color: "var(--font-color-museum)",
       title: "Chinese Canadian Museum – New Year Parade Flags",
       sub: "traditional, 2023 winter",
-      img: "",
+      img: "/picture/ccm/ccm_flag_main.png",
       link: "/yingyechang",
+      className: "museum"
     },
     {
       id: "Apotheosis",
@@ -103,6 +109,7 @@ function MiddleSection(){
       sub: "publication, 2023 summer",
       img: "/picture/Nainai/nainai_main.png",
       link: "/nainai",
+      className:"nainai"
     },
     {
       id: "no024",
@@ -122,6 +129,7 @@ function MiddleSection(){
       sub: "installation, 2023 summer",
       img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
+      className: "discipline"
     },
     {
       id: "cunt",
@@ -129,8 +137,9 @@ function MiddleSection(){
       title: "CUNT Magazine",
       text: "I have a cunt, I must receive!",
       sub: "publication, 2022 spring",
-      img: "/picture/CUNT/CUNT_main.png",
+      img: "/picture/CUNT/cunt_main.png",
       link: "/cunt",
+      className:"cunt"
     },
     {
       id: "quench",
@@ -140,6 +149,7 @@ function MiddleSection(){
       sub: "publication, 2022 winter",
       img: "/picture/QuenchThirst/quench_main.png",
       link: "/quenchthirst",
+      className: "quench"
     },
   ];
 
@@ -168,16 +178,18 @@ function MiddleSection(){
       color: "var(--font-color-yellow)",
       title: "香港画廊协会艺术指南",
       sub: "地图，二零二五年春",
-      img: "/picture/HKAGA/HKAGA_main",
+      img: "/picture/HKAGA/HKAGA_main.png",
       link: "",
+      className:"hkaga"
     },
     {
       id: "grass_zh",
       color: "var(--font-color-lightBlue)",
       title: "曲若汐：小草",
       sub: "海报，二零二五年春",
-      img: "",
+      img: "/picture/LG/LG_main.png",
       link: "/yingyechang",
+      className: "LG"
     },
     {
       id: "spaceCity_zh",
@@ -194,16 +206,18 @@ function MiddleSection(){
       title: "被隐喻的部分",
       text: "疾病是生命的暗面，是一种更沉重的身份。",
       sub: "书籍，二零二四年秋",
-      img: "",
+      img: "/picture/shadow/shadow_main.png",
       link: "/yingyechang",
+      className:"shadow"
     },
     {
       id: "caoFei_zh",
       color: "var(--font-color-caofei)",
       title: "曹斐：潮汐宙合",
       sub: "展览，二零二四年夏",
-      img: "/picture/CaoFei/cftf_main.png",
+      img: "/picture/CaoFei/cftd_main.png",
       link: "/caifei",
+      className:"cftd"
     },
     {
       id: "cyber_zh",
@@ -212,14 +226,16 @@ function MiddleSection(){
       sub: "书籍，二零二三年冬",
       img: "/picture/Cyber/cybernetics_main.png",
       link: "/cyber",
+      className:"cyber"
     },
     {
       id: "museum_zh",
       color: "var(--font-color-museum)",
       title: "加拿大华裔博物馆华埠庆会潮绣旗彩",
       sub: "传统物件，二零二三年冬",
-      img: "",
+      img: "/picture/ccm/ccm_flag_main.png",
       link: "/yingyechang",
+      className: "museum"
     },
     {
       id: "Apotheosis_zh",
@@ -239,6 +255,7 @@ function MiddleSection(){
       sub: "书籍，二零二三年秋",
       img: "/picture/Nainai/nainai_main.png",
       link: "/nainai",
+      className:"nainai"
     },
     {
       id: "no024_zh",
@@ -258,6 +275,7 @@ function MiddleSection(){
       sub: "装置，二零二三年夏",
       img: "/picture/Displine/displine_main.png",
       link: "/disciplinearchive",
+      className: "discipline"
     },
     {
       id: "cunt_zh",
@@ -265,8 +283,9 @@ function MiddleSection(){
       title: "CUNT",
       text: "我有一个阴道，我必须接受，也必须回应。",
       sub: "书籍，二零二二年春",
-      img: "/picture/CUNT/CUNT_main.png",
+      img: "/picture/CUNT/cunt_main.png",
       link: "/cunt",
+      className:"cunt"
     },
     {
       id: "quench_zh",
@@ -276,6 +295,7 @@ function MiddleSection(){
       sub: "书籍，二零二二年春",
       img: "/picture/QuenchThirst/quench_main.png",
       link: "/quenchthirst",
+      className: "quench"
     },
   ];
 
