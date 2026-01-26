@@ -298,9 +298,9 @@ h4
 
 
   .preview.yyc img{
-    left: 920px; 
-    top: 15px;
-  }
+  left: calc(920px - (1920px - 100vw) * 0.5);
+  top: 15px;
+}
 
   .preview.uruklyn img{
     left: 90px; 
@@ -309,7 +309,7 @@ h4
   }
 
   .preview.space img{
-    left: 1100px; 
+    left: calc(1100px - (1920px - 100vw) * 0.5);
     top: 10px;
     scale: 90%;
   }
@@ -339,7 +339,7 @@ h4
   }
 
   .preview.cftd img{
-    left: 980px; 
+    left: calc(980px - (1920px - 100vw) * 0.5);
     top: 210px;
     scale: 85%;
   }
@@ -369,19 +369,19 @@ h4
   }
 
   .preview.museum img{
-    left: 1000px; 
+    left: calc(1000px - (1920px - 100vw) * 0.5);
     top: 350px;
     scale: 100%;
   }
 
   .preview.apotheosis img{
-    left: 950px; 
+    left: calc(950px - (1920px - 100vw) * 0.5);
     top: 0px;
     scale: 100%;
   }
 
   .preview.noZeroTwoFour img{
-    left: 1100px; 
+    left: calc(1100px - (1920px - 100vw) * 0.9);
     top: 420px;
     scale: 100%;
   }
