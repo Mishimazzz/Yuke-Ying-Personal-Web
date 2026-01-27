@@ -9,6 +9,7 @@ import DisciplineArchive from "./Discipline/DisciplineArchivePage";
 import SpaceCity from "./SpaceCity/SpaceCityPage";
 import CaiFei from "./CaiFei/CaiFeiPage";
 import Cyber from "./Cyber/CyberPage";
+import LG from "./LG/LGPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/spacecity" element={<SpaceCity />} />
           <Route path="/caifei" element={<CaiFei />} />
           <Route path="/cyber" element={<Cyber />} />
+          <Route path="/LG" element={<LG />} />
         </Routes>
       </Router>
     </LanguageProvider>

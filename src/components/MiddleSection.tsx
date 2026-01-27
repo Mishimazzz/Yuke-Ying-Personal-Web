@@ -42,7 +42,7 @@ function MiddleSection(){
       title: "Solveig Qu Suess: Little Grass",
       sub: "posters, 2025 spring",
       img: "/picture/LG/LG_main.png",
-      link: "/yingyechang",
+      link: "/LG",
       className: "LG"
     },
     {
@@ -188,7 +188,7 @@ function MiddleSection(){
       title: "曲若汐：小草",
       sub: "海报，二零二五年春",
       img: "/picture/LG/LG_main.png",
-      link: "/yingyechang",
+      link: "/LG",
       className: "LG"
     },
     {
