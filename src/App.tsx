@@ -10,6 +10,7 @@ import SpaceCity from "./SpaceCity/SpaceCityPage";
 import CaiFei from "./CaiFei/CaiFeiPage";
 import Cyber from "./Cyber/CyberPage";
 import LG from "./LG/LGPage";
+import HKaGa from "./HKaGa/HKaGaPage";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/caifei" element={<CaiFei />} />
           <Route path="/cyber" element={<Cyber />} />
           <Route path="/LG" element={<LG />} />
+          <Route path="/hkaga" element={<HKaGa />} />
         </Routes>
       </Router>
     </LanguageProvider>

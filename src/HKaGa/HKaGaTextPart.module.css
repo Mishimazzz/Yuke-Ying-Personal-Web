@@ -1,0 +1,99 @@
+.page {
+  width: min(800px, calc(100vw - 680px));
+  max-width: 800px;
+  padding-bottom: 260px;
+}
+
+.textBox {
+  width: 100%;
+}
+
+.title {
+  width: max-content;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-bottom 0.4s ease;
+}
+
+.open {
+  max-height: 420px;
+  opacity: 1;
+}
+
+.englishCopy,
+.chineseCopy {
+  max-width: 700px;
+  padding-top: 30px;
+}
+
+.englishCopy {
+  font-size: 15.5px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.chineseCopy {
+  max-width: 610px;
+  font-size: 14.5px !important;
+  line-height: 25px !important;
+}
+
+.imageStack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 76px;
+  margin-top: 60px;
+  transform: translateX(-96px);
+}
+
+.imageStack img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageStack img:first-child {
+  width: 100%;
+  align-self: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .page {
+    width: min(70vw, 800px);
+    max-width: 70vw;
+    padding-bottom: 100px;
+  }
+
+  .imageStack {
+    width: 100%;
+    gap: 36px;
+    transform: none;
+  }
+
+  .open {
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    width: calc(100vw - 88px);
+    max-width: calc(100vw - 88px);
+  }
+
+  .englishCopy,
+  .chineseCopy {
+    max-width: 100%;
+  }
+
+  .imageStack {
+    margin-top: 52px;
+  }
+}

@@ -32,8 +32,8 @@ function MiddleSection(){
       color: "var(--font-color-yellow)",
       title: "HKAGA Art Guide",
       sub: "map, 2025 spring",
-      img: "/picture/HKAGA/HKAGA_main.png",
-      link: "",
+      img: "/picture/HKAGA/HKAGA_main_en.png",
+      link: "/hkaga",
       className:"hkaga"
     },
     {
@@ -178,8 +178,8 @@ function MiddleSection(){
       color: "var(--font-color-yellow)",
       title: "香港画廊协会艺术指南",
       sub: "地图，二零二五年春",
-      img: "/picture/HKAGA/HKAGA_main.png",
-      link: "",
+      img: "/picture/HKAGA/HKAGA_main_cn.png",
+      link: "/hkaga",
       className:"hkaga"
     },
     {
