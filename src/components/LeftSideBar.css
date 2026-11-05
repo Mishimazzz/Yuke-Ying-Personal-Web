@@ -27,3 +27,18 @@
   font-family: "HY Jin", serif !important;
   font-size: 19.2px !important;
 }
+
+@media screen and (max-width: 1280px) {
+  .left-section {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1800px) {
+  .left-section-detail {
+    right: auto;
+    width: 400px;
+    height: auto;
+    background: transparent;
+  }
+}

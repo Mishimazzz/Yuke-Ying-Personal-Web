@@ -1,6 +1,12 @@
 import "./yycTextPart.css"
-import {useState} from 'react'
+import { useEffect, useState } from 'react'
 import { useLanguage } from '../components/LanguageContext';
+
+const DESIGN_WIDTH = 1920;
+const HERO_HEIGHT = 1450;
+const STAGE_ANCHOR_Y = 180;
+const STAGE_HEIGHT = HERO_HEIGHT + 2584;
+
 function YycTextPart()
 {
   const images = [
@@ -28,9 +34,30 @@ function YycTextPart()
   const [isOpen, setIsOpen] = useState(false);
   const { language } = useLanguage();
 
+  const [viewportWidth, setViewportWidth] = useState(() => window.innerWidth);
+
+  useEffect(() => {
+    const updateViewportWidth = () => setViewportWidth(window.innerWidth);
+    window.addEventListener("resize", updateViewportWidth);
+    return () => window.removeEventListener("resize", updateViewportWidth);
+  }, []);
+
+  const isMobile = viewportWidth <= 480;
+  const stageScale = Math.min(1, viewportWidth / DESIGN_WIDTH);
+  const scaledStageHeight = STAGE_ANCHOR_Y +
+    (STAGE_HEIGHT - STAGE_ANCHOR_Y) * stageScale;
+  const headingLeft = isMobile ? 44 : Math.max(420, 585 * stageScale);
+  const headingWidth = Math.max(
+    0,
+    Math.min(800, viewportWidth - headingLeft - 44)
+  );
+
   return(
-    <div>
-      <div className="middle-section" style={{ maxWidth: "800px" }}>
+    <div className="yyc-page">
+      <div
+        className="yyc-heading"
+        style={{ marginLeft: `${headingLeft}px`, width: `${headingWidth}px` }}
+      >
         <div className="text-box">
           <h3
             className="title"
@@ -67,65 +94,78 @@ function YycTextPart()
             )}
           </div>
         </div>
-        {/* 默认1920宽 */}
-        <img src="/picture/yingyechang/yyc_1.png" alt="" className="yyc-image"
-          style={{
-            "--x": "-490px",
-            "--rotate": "10deg",
-            "--scale": "1.5",
-            "--top": "180px"
-          } as React.CSSProperties} />
-        {language === "zh" ? (
-          <p style={{ fontFamily: "HY Jin", fontSize: "16.2px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", letterSpacing: "1.2px" }}>
-            尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>142 × 210  mm</span><br />
-            页数：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>304</span>页<br />
-            首版：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>200</span>份<br />
-            仅赠亲友阅读，无商业意图。<br />
-          </p>
-        ) : (
-            <p style={{ fontFamily: "GT Alpina", fontSize: "17.8px", color: "var(--font-color-orange)", transform: " rotate(10deg) translateX(350px) translateY(-500px)", letterSpacing: "1.2px" }}>
-              Size: 142 × 210 mm<br />
-              Page count: 304 pages<br />
-              First edition: 200 copies<br />
-              For reading only, not for sale.<br />
-            </p> 
-        )}
-        <img src="/picture/yingyechang/yyc_2.png" 
-          className="yyc-image"
-          alt="" style={{
-          "--x": "220px",
-          "--rotate": "0deg",
-          "--scale": "1.6",
-            "--top": "0px"
-          } as React.CSSProperties} />
-      </div>
-      
-      {/* slider */}
-      <div className="slider">
-        <img
-          src="/picture/yingyechang/arrowLeft.png"
-          alt="prev_button"
-          onClick={prev}
-          className="arrow-left"
-        />
-        
-        <img
-          src={images[index]}
-          alt="slide"
-          className="slide"
-        />
-
-        <img
-          src="/picture/yingyechang/arrowRight.png"
-          alt="next_button"
-          onClick={next}
-          className="arrow-right"
-        />
       </div>
 
-      <div className="bottom-img">
-        <img src="/picture/yingyechang/yyc_17.jpg" alt="" style={{
-          transform: "translateX(90px) translateY(0px)", width: "1700px",height: "auto", }} />
+      <div
+        className="yyc-stage-shell"
+        style={{ height: `${scaledStageHeight}px` }}
+      >
+        <div
+          className="yyc-stage"
+          style={{ transform: `scale(${stageScale})` }}
+        >
+          <div className="yyc-hero-panel">
+            <div className="yyc-hero-content">
+              <img src="/picture/yingyechang/yyc_1.png" alt="" className="yyc-image"
+                style={{
+                  "--x": "-490px",
+                  "--rotate": "10deg",
+                  "--scale": "1.5",
+                  "--top": `${STAGE_ANCHOR_Y}px`
+                } as React.CSSProperties} />
+              {language === "zh" ? (
+                <p className="yyc-specs yyc-specs-zh">
+                  尺寸：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>142 × 210  mm</span><br />
+                  页数：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>304</span>页<br />
+                  首版：<span style={{ fontFamily: "GT Alpina", fontSize: "17.8px" }}>200</span>份<br />
+                  仅赠亲友阅读，无商业意图。<br />
+                </p>
+              ) : (
+                <p className="yyc-specs yyc-specs-en">
+                  Size: 142 × 210 mm<br />
+                  Page count: 304 pages<br />
+                  First edition: 200 copies<br />
+                  For reading only, not for sale.<br />
+                </p>
+              )}
+              <img src="/picture/yingyechang/yyc_2.png" 
+                className="yyc-image"
+                alt="" style={{
+                  "--x": "220px",
+                  "--rotate": "0deg",
+                  "--scale": "1.6",
+                  "--top": "0px"
+                } as React.CSSProperties} />
+            </div>
+          </div>
+
+          {/* slider */}
+          <div className="slider">
+            <img
+              src="/picture/yingyechang/arrowLeft.png"
+              alt="prev_button"
+              onClick={prev}
+              className="arrow-left"
+            />
+            
+            <img
+              src={images[index]}
+              alt="slide"
+              className="slide"
+            />
+
+            <img
+              src="/picture/yingyechang/arrowRight.png"
+              alt="next_button"
+              onClick={next}
+              className="arrow-right"
+            />
+          </div>
+
+          <div className="bottom-img">
+            <img src="/picture/yingyechang/yyc_17.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
     

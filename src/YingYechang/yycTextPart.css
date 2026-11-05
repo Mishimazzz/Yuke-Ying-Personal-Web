@@ -1,3 +1,37 @@
+.yyc-page {
+  padding-top: 44px;
+  overflow-x: clip;
+}
+
+.yyc-heading {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  white-space: pre-line;
+}
+
+.yyc-stage-shell {
+  position: relative;
+  width: 100%;
+}
+
+.yyc-stage {
+  width: 1920px;
+  height: 4034px;
+  transform-origin: left 180px;
+}
+
+.yyc-hero-panel {
+  height: 1450px;
+}
+
+.yyc-hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: 585px;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -57,9 +91,10 @@
 }
 
 .bottom-img img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 1700px;
   object-fit: cover;
+  transform: translateX(90px);
 }
 
 .yyc-image {
@@ -67,10 +102,81 @@
   margin-top: var(--top);
 }
 
-@media screen and (max-width: 1280px) {
-  .yyc-image {
-    transform: translateX(calc(var(--x) * 0.2 - 300px)) rotate(var(--rotate)) scale(calc(var(--scale) * 0.9));
-    margin-top: calc(var(--top) * 0.7);
+.yyc-specs {
+  color: var(--font-color-orange);
+  letter-spacing: 1.2px;
+  transform: rotate(10deg) translateX(350px) translateY(-500px);
+}
+
+.yyc-specs-en {
+  font-family: "GT Alpina", serif;
+  font-size: 17.8px;
+}
+
+.yyc-specs-zh {
+  font-family: "HY Jin", serif;
+  font-size: 16.2px;
+}
+
+@media screen and (max-width: 480px) {
+  .yyc-page {
+    padding-top: 280px;
   }
 
+  .yyc-heading {
+    margin-left: 44px !important;
+    width: calc(100vw - 88px) !important;
+  }
+
+  .yyc-stage-shell {
+    height: auto !important;
+    margin-top: 52px;
+  }
+
+  .yyc-stage {
+    width: 100%;
+    height: auto;
+    transform: none !important;
+  }
+
+  .yyc-hero-panel {
+    height: auto;
+  }
+
+  .yyc-hero-content {
+    width: calc(100vw - 88px);
+    margin-left: 44px;
+    gap: 28px;
+  }
+
+  .yyc-image {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .yyc-specs {
+    transform: none;
+  }
+
+  .slider {
+    height: 70vh;
+    min-height: 420px;
+    margin-top: 40px;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .bottom-img {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+
+  .bottom-img img {
+    width: 100%;
+    transform: none;
+  }
 }

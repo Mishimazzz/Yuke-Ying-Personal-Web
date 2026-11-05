@@ -11,7 +11,7 @@ function LeftSideBar()
   const { language } = useLanguage();
 
   return (
-    <div className="left-section">
+    <div className={`left-section ${isHomePage ? "left-section-home" : "left-section-detail"}`}>
       <div className="TopBar">
         {isHomePage ? (
           language === "zh" ? (
