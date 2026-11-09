@@ -7,7 +7,7 @@ function HKaGaTextPart() {
   const { language } = useLanguage();
 
   return (
-    <main className={`middle-section ${styles.page}`}>
+    <main className={styles.page}>
       <div className={styles.textBox}>
         <h3
           className={styles.title}
@@ -54,19 +54,21 @@ function HKaGaTextPart() {
         </div>
       </div>
 
-      <div className={styles.imageStack}>
-        <img
-          src="/picture/HKAGA/HKAGA_1.png"
-          alt="The unfolded 2025 HKAGA Art Guide map"
-        />
-        <img
-          src="/picture/HKAGA/HKAGA_2.JPG"
-          alt="The HKAGA Art Guide displayed on a wall"
-        />
-        <img
-          src="/picture/HKAGA/HKAGA_3.jpg"
-          alt="Detail of the HKAGA Art Guide map legend"
-        />
+      <div className={styles.stage}>
+        <div className={styles.imageStack}>
+          <img
+            src="/picture/HKAGA/HKAGA_1.png"
+            alt="The unfolded 2025 HKAGA Art Guide map"
+          />
+          <img
+            src="/picture/HKAGA/HKAGA_2.JPG"
+            alt="The HKAGA Art Guide displayed on a wall"
+          />
+          <img
+            src="/picture/HKAGA/HKAGA_3.jpg"
+            alt="Detail of the HKAGA Art Guide map legend"
+          />
+        </div>
       </div>
     </main>
   );

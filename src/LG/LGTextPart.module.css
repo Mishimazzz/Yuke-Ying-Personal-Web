@@ -1,18 +1,117 @@
-.title {
-  margin-top: 1px;
-}
-
-.body {
-  background-color: pink;
-}
-
-
-.slide {
+.page {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  overflow-x: clip;
 }
 
-/* LG 页面全局/或 module 里给这个包一层 class */
-.lgWrap { position: relative; }
+.title {
+  position: absolute;
+  top: 44px;
+  left: clamp(420px, 30.46875vw, 585px);
+  z-index: 1;
+  margin: 0;
+}
 
+.stage {
+  position: relative;
+  box-sizing: border-box;
+  width: min(1786px, 100%);
+  padding: 96px 44px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.composition {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1698 / 1204;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.posterOne {
+  position: absolute;
+  top: 16.6113%;
+  left: 0;
+  width: 37.31449%;
+}
+
+.posterTwoGroup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37.31449%;
+}
+
+.details {
+  margin: 0;
+  text-align: left;
+  letter-spacing: 1.2px;
+}
+
+.detailsEn {
+  width: 71.02%;
+  margin: 16px 0 0 0.76%;
+  font-size: clamp(10px, 0.91284vw, 15.5px);
+}
+
+.detailsZh {
+  position: absolute;
+  top: 43.52159%;
+  left: 1.70789%;
+  width: 14.7232%;
+  color: var(--font-color-pink);
+  font-size: clamp(10px, 0.95406vw, 16.2px) !important;
+  transform: rotate(5deg);
+}
+
+.latin {
+  font-family: "GT Alpina", serif !important;
+  font-size: 0.95679em !important;
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding-top: 280px;
+    overflow: hidden;
+  }
+
+  .title {
+    position: static;
+    margin-left: 44px;
+  }
+
+  .stage {
+    width: calc(100% - 88px);
+    padding: 0;
+    margin: 52px auto 120px;
+  }
+
+  .composition {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    aspect-ratio: auto;
+  }
+
+  .posterOne,
+  .posterTwoGroup,
+  .details {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+
+  .detailsEn {
+    margin: 16px 0 0;
+  }
+
+  .detailsEn,
+  .detailsZh {
+    font-size: 15.5px !important;
+  }
+}

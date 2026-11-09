@@ -1,11 +1,15 @@
 .page {
-  width: min(800px, calc(100vw - 680px));
-  max-width: 800px;
-  padding-bottom: 260px;
+  --content-left: clamp(420px, 30.46875vw, 585px);
+
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 80px;
+  overflow-x: clip;
 }
 
 .textBox {
-  width: 100%;
+  width: min(800px, calc(100% - var(--content-left) - 44px));
+  margin-left: var(--content-left);
 }
 
 .title {
@@ -44,13 +48,19 @@
   line-height: 25px !important;
 }
 
+.stage {
+  width: min(848px, 100%);
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .imageStack {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 76px;
-  margin-top: 60px;
-  transform: translateX(-96px);
+  width: 94.33962%;
+  gap: clamp(36px, 8.96226vw, 76px);
+  margin-left: 2.83019%;
 }
 
 .imageStack img {
@@ -60,23 +70,11 @@
 }
 
 .imageStack img:first-child {
-  width: 100%;
+  width: 106%;
   align-self: center;
 }
 
 @media screen and (max-width: 1280px) {
-  .page {
-    width: min(70vw, 800px);
-    max-width: 70vw;
-    padding-bottom: 100px;
-  }
-
-  .imageStack {
-    width: 100%;
-    gap: 36px;
-    transform: none;
-  }
-
   .open {
     max-height: 600px;
   }
@@ -84,8 +82,14 @@
 
 @media screen and (max-width: 480px) {
   .page {
-    width: calc(100vw - 88px);
-    max-width: calc(100vw - 88px);
+    --content-left: 44px;
+
+    padding-top: 280px;
+    padding-bottom: 80px;
+  }
+
+  .textBox {
+    width: calc(100% - 88px);
   }
 
   .englishCopy,
@@ -93,7 +97,18 @@
     max-width: 100%;
   }
 
-  .imageStack {
+  .stage {
+    width: calc(100% - 88px);
     margin-top: 52px;
+  }
+
+  .imageStack {
+    width: 100%;
+    gap: 36px;
+    margin-left: 0;
+  }
+
+  .imageStack img:first-child {
+    width: 100%;
   }
 }
