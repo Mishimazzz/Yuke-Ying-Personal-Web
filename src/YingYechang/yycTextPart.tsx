@@ -102,7 +102,10 @@ function YycTextPart()
       >
         <div
           className="yyc-stage"
-          style={{ transform: `scale(${stageScale})` }}
+          style={{
+            transform: `scale(${stageScale})`,
+            "--spec-counter-scale": `${1 / stageScale}`
+          } as React.CSSProperties}
         >
           <div className="yyc-hero-panel">
             <div className="yyc-hero-content">
