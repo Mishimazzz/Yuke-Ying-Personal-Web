@@ -105,7 +105,10 @@
 .yyc-specs {
   color: var(--font-color-orange);
   letter-spacing: 1.2px;
-  transform: rotate(10deg) translateX(350px) translateY(-500px);
+  white-space: nowrap;
+  transform: rotate(10deg) translateX(350px) translateY(-500px)
+    scale(var(--spec-counter-scale));
+  transform-origin: left top;
 }
 
 .yyc-specs-en {
