@@ -1,0 +1,130 @@
+.page {
+  width: 100%;
+  padding-top: 44px;
+  overflow-x: clip;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  white-space: pre-line;
+}
+
+.title {
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+}
+
+.interactiveTitle {
+  cursor: pointer;
+}
+
+.description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.descriptionOpen {
+  max-height: 700px;
+  opacity: 1;
+}
+
+.stageShell {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stage {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: visible;
+}
+
+.slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrowButton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.previousButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding-top: 280px;
+  }
+
+  .heading {
+    width: calc(100vw - 88px) !important;
+    margin-left: 44px !important;
+  }
+
+  .stageShell {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 52px;
+  }
+
+  .stage {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .carousel {
+    height: min(70vh, 680px) !important;
+    min-height: 420px;
+    margin-top: 40px !important;
+    margin-bottom: 120px;
+  }
+
+  .arrowButton {
+    width: 44px;
+    height: 44px;
+  }
+
+  .previousButton {
+    left: 8px;
+  }
+
+  .nextButton {
+    right: 8px;
+  }
+}

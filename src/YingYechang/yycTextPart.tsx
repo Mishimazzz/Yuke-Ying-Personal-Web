@@ -1,9 +1,10 @@
-import { useEffect, useState, type CSSProperties } from "react";
+import type { CSSProperties } from "react";
 import { useLanguage } from "../components/LanguageContext";
+import ProjectDetailShow, {
+  ProjectDetailCarousel,
+} from "../components/ProjectDetailShow";
 import "./yycTextPart.css";
 
-const DESIGN_WIDTH = 1920;
-const DESKTOP_GUTTER = 44;
 const STAGE_ANCHOR_Y = 180;
 const STAGE_HEIGHT = 4034;
 const SLIDES = Array.from(
@@ -12,18 +13,6 @@ const SLIDES = Array.from(
 );
 
 type CssVariables = CSSProperties & Record<`--${string}`, string>;
-
-function useViewportWidth() {
-  const [viewportWidth, setViewportWidth] = useState(() => window.innerWidth);
-
-  useEffect(() => {
-    const updateViewportWidth = () => setViewportWidth(window.innerWidth);
-    window.addEventListener("resize", updateViewportWidth);
-    return () => window.removeEventListener("resize", updateViewportWidth);
-  }, []);
-
-  return viewportWidth;
-}
 
 function createImageStyle(
   x: string,
@@ -110,101 +99,34 @@ function ProjectSpecs({ language }: { language: string }) {
   );
 }
 
-function ProjectCarousel({
-  index,
-  onPrevious,
-  onNext,
-}: {
-  index: number;
-  onPrevious: () => void;
-  onNext: () => void;
-}) {
-  return (
-    <div className="yyc-slider">
-      <img
-        src="/picture/yingyechang/arrowLeft.png"
-        alt="Previous slide"
-        onClick={onPrevious}
-        className="yyc-arrow yyc-arrow-left"
-      />
-      <img src={SLIDES[index]} alt="" className="yyc-slide" />
-      <img
-        src="/picture/yingyechang/arrowRight.png"
-        alt="Next slide"
-        onClick={onNext}
-        className="yyc-arrow yyc-arrow-right"
-      />
-    </div>
-  );
-}
-
 function YycTextPart() {
   const { language } = useLanguage();
-  const viewportWidth = useViewportWidth();
-  const [slideIndex, setSlideIndex] = useState(0);
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-
-  const isMobile = viewportWidth <= 480;
-  const availableStageWidth = isMobile
-    ? viewportWidth
-    : Math.max(0, viewportWidth - DESKTOP_GUTTER * 2);
-  const stageScale = Math.min(1, availableStageWidth / DESIGN_WIDTH);
-  const scaledStageWidth = DESIGN_WIDTH * stageScale;
-  const scaledStageHeight =
-    STAGE_ANCHOR_Y + (STAGE_HEIGHT - STAGE_ANCHOR_Y) * stageScale;
-  const headingLeft = isMobile ? DESKTOP_GUTTER : Math.max(420, 585 * stageScale);
-  const headingWidth = Math.max(
-    0,
-    Math.min(800, viewportWidth - headingLeft - DESKTOP_GUTTER),
-  );
-
-  const previousSlide = () => {
-    setSlideIndex((current) => (current - 1 + SLIDES.length) % SLIDES.length);
-  };
-
-  const nextSlide = () => {
-    setSlideIndex((current) => (current + 1) % SLIDES.length);
-  };
-
-  const stageStyle: CssVariables = {
-    transform: `scale(${stageScale})`,
-    "--spec-counter-scale": `${1 / stageScale}`,
-  };
 
   return (
-    <main className="yyc-page">
-      <section
-        className="yyc-heading"
-        style={{ marginLeft: headingLeft, width: headingWidth }}
-      >
-        <h3
-          className="yyc-title"
-          onClick={() => setIsDescriptionOpen((open) => !open)}
-        >
-          {language === "zh" ? <span className="zh-font">应业長</span> : "Everlasting Good Karma"}
-        </h3>
+    <ProjectDetailShow
+      language={language}
+      title={
+        language === "zh" ? <span className="zh-font">应业長</span> : "Everlasting Good Karma"
+      }
+      description={<ProjectDescription language={language} />}
+      designHeight={STAGE_HEIGHT}
+      anchorY={STAGE_ANCHOR_Y}
+      stageGutter={44}
+    >
+      {({ scale }) => (
         <div
-          className={`yyc-description ${
-            isDescriptionOpen ? "yyc-description-open" : ""
-          } ${language === "zh" ? "zh-font" : ""}`}
+          className="yyc-content"
+          style={
+            {
+              "--spec-counter-scale": `${1 / Math.max(scale, 0.001)}`,
+            } as CssVariables
+          }
         >
-          <ProjectDescription language={language} />
-        </div>
-      </section>
-
-      <section
-        className="yyc-stage-shell"
-        style={{
-          width: isMobile ? "100%" : scaledStageWidth,
-          height: scaledStageHeight,
-        }}
-      >
-        <div className="yyc-stage" style={stageStyle}>
           <div className="yyc-hero-panel">
             <div className="yyc-hero-content">
               <img
                 src="/picture/yingyechang/yyc_1.png"
-                alt=""
+                alt="Everlasting Good Karma book interior"
                 className="yyc-image"
                 style={createImageStyle(
                   "-490px",
@@ -216,25 +138,30 @@ function YycTextPart() {
               <ProjectSpecs language={language} />
               <img
                 src="/picture/yingyechang/yyc_2.png"
-                alt=""
+                alt="Everlasting Good Karma book cover"
                 className="yyc-image"
                 style={createImageStyle("220px", "0deg", "1.6", "0px")}
               />
             </div>
           </div>
 
-          <ProjectCarousel
-            index={slideIndex}
-            onPrevious={previousSlide}
-            onNext={nextSlide}
+          <ProjectDetailCarousel
+            slides={SLIDES}
+            height={1200}
+            marginTop={50}
+            className="yyc-slider"
+            imageClassName="yyc-slide"
           />
 
           <div className="yyc-bottom-image">
-            <img src="/picture/yingyechang/yyc_17.jpg" alt="" />
+            <img
+              src="/picture/yingyechang/yyc_17.jpg"
+              alt="Everlasting Good Karma book detail"
+            />
           </div>
         </div>
-      </section>
-    </main>
+      )}
+    </ProjectDetailShow>
   );
 }
 
