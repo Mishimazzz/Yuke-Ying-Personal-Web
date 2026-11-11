@@ -10,9 +10,55 @@
   white-space: pre-line;
 }
 
+.yyc-title {
+  cursor: pointer;
+}
+
+.yyc-title .zh-font {
+  display: inline-block;
+}
+
+.yyc-description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.yyc-description-open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.yyc-copy {
+  line-height: 25px;
+}
+
+.yyc-copy-en {
+  max-width: 700px;
+  font-size: 15.5px;
+  letter-spacing: 0.02em;
+}
+
+.yyc-copy-zh {
+  max-width: 550px;
+  font-size: 14.5px;
+}
+
+.yyc-copy-project-name {
+  font-family: "GT Alpina Italic", serif;
+  font-size: 15.5px;
+}
+
+.yyc-copy-person-name {
+  font-family: "HY Jin", serif;
+  font-size: 14.5px;
+}
+
 .yyc-stage-shell {
   position: relative;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .yyc-stage {
@@ -32,74 +78,9 @@
   margin-left: 585px;
 }
 
-.slider {
-  position: relative;
-  width: 100%;
-  height: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-  margin-top: 50px;
-}
-
-.slide {
-  width: 80%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.text-box .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-}
-
-.text-box .content.open {
-  max-height: 600px;
-  opacity: 1;
-}
-
-.arrow-left,
-.arrow-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 65px;
-  height: 65px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow-left {
-  left: 20px;
-}
-
-.arrow-right {
-  right: 20px;
-}
-
-.bottom-img
-{
-  display:block;
-  height:auto;
-  width:100%;
-  overflow: hidden;
-  margin-bottom: 300px;
-  margin-top: -100px;
-}
-
-.bottom-img img {
-  height: auto;
-  width: 1700px;
-  object-fit: cover;
-  transform: translateX(90px);
-}
-
 .yyc-image {
-  transform: translateX(var(--x)) rotate(var(--rotate)) scale(var(--scale));
   margin-top: var(--top);
+  transform: translateX(var(--x)) rotate(var(--rotate)) scale(var(--scale));
 }
 
 .yyc-specs {
@@ -121,6 +102,62 @@
   font-size: 16.2px;
 }
 
+.yyc-specs-latin {
+  font-family: "GT Alpina", serif;
+  font-size: 17.8px;
+}
+
+.yyc-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1200px;
+  margin-top: 50px;
+  overflow: visible;
+}
+
+.yyc-slide {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.yyc-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.yyc-arrow-left {
+  left: 20px;
+}
+
+.yyc-arrow-right {
+  right: 20px;
+}
+
+.yyc-bottom-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -100px;
+  margin-bottom: 300px;
+  overflow: hidden;
+}
+
+.yyc-bottom-image img {
+  width: 1700px;
+  height: auto;
+  object-fit: cover;
+  transform: translateX(90px);
+}
+
 @media screen and (max-width: 1280px) {
   .yyc-specs {
     display: none;
@@ -133,11 +170,12 @@
   }
 
   .yyc-heading {
-    margin-left: 44px !important;
     width: calc(100vw - 88px) !important;
+    margin-left: 44px !important;
   }
 
   .yyc-stage-shell {
+    width: 100% !important;
     height: auto !important;
     margin-top: 52px;
   }
@@ -165,26 +203,22 @@
     transform: none;
   }
 
-  .yyc-specs {
-    transform: none;
-  }
-
-  .slider {
+  .yyc-slider {
     height: 70vh;
     min-height: 420px;
     margin-top: 40px;
   }
 
-  .slide {
+  .yyc-slide {
     width: 100%;
   }
 
-  .bottom-img {
+  .yyc-bottom-image {
     margin-top: 40px;
     margin-bottom: 120px;
   }
 
-  .bottom-img img {
+  .yyc-bottom-image img {
     width: 100%;
     transform: none;
   }
